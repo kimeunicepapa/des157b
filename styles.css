@@ -6,11 +6,13 @@ body {
     background-color: #333;
     color: rgb(235, 235, 235);
     transition: all 2s;
+    font-family: 'Outfit', sans-serif;
 }
 
 body.switch {
     background-color: rgb(235, 235, 235);
     color: #333;
+    font-family: 'Raleway', sans-serif;
 }
 
 #container {
@@ -25,6 +27,14 @@ body.switch {
 
 header {
     margin: 0 auto 2em auto;
+}
+
+h1 {
+    font-family: 'Righteous', sans-serif;
+}
+
+h1.switch {
+    font-family: 'Spicy Rice', sans-serif;
 }
 
 #banner {
