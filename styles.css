@@ -10,7 +10,7 @@ body {
 }
 
 body.switch {
-    background-image: url("/images/psychedelic-background.svg");
+    background-image: url("images/psychedelic-background.svg");
     background-repeat: repeat-y;
     background-size: cover;
     /* background-color: #ED8534; */
