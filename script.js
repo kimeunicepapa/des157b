@@ -48,7 +48,7 @@
                 h3.removeAttribute('class');
             }
             for (const list of lists) {
-                list.removeAttribute('switch');
+                list.removeAttribute('class');
             }
             for (const section of sections) {
                 section.removeAttribute('class');
