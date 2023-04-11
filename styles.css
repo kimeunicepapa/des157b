@@ -131,7 +131,7 @@ h2.switch {
 }
 
 #circle {
-    visibility: visible;
+    opacity: 1;
     position: absolute;
 
     top: 24px;
@@ -148,7 +148,7 @@ h2.switch {
 }
 
 #circle.switch {
-    visibility: hidden;
+    opacity: 0;
 }
 
 main {
@@ -374,7 +374,7 @@ button.switch:hover {
 }
 
 #mushroom {
-    visibility: hidden;
+    opacity: 0;
     position: absolute;
     top: 170px;
     right: 50px;
@@ -390,7 +390,7 @@ button.switch:hover {
 }
 
 #mushroom.switch {
-    visibility: visible;
+    opacity: 1;
 }
 
 @keyframes rotation {
