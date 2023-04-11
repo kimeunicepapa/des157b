@@ -139,9 +139,10 @@ h2.switch {
     right: 70px;
 
     animation-name: rotation;
-    animation-duration: 15s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
+    /* animation-fill-mode: forwards; */
+    animation-timing-function: linear;
 }
 
 #circle:hover {
@@ -382,13 +383,15 @@ button.switch:hover {
     right: 50px;
 
     animation-name: spinningMush;
-    animation-duration: 20s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
 }
 
 #mushroom:hover {
-    animation-play-state: paused;
+     animation-play-state: paused;
+    /* animation-fill-mode:both; */
 }
 
 #mushroom.switch {
@@ -400,23 +403,23 @@ button.switch:hover {
     0% {
         transform: rotate(0);
     } 
-    50% {
+    /* 50% {
         transform: rotate(360deg);
-    }
+    } */
     100% {
-        transform: rotate(0);
+        transform: rotate(359deg);
     }
 }
 
 @keyframes spinningMush {
     0% {
-        transform: rotate(0);
+        transform: rotate(0) scale(1);
     } 
     50% {
-        transform: rotate(360deg);
+        transform: rotate(360deg) scale(0.6);
     }
     100% {
-        transform: rotate(0);
+        transform: rotate(0) scale(1);
     }
     /* 0% {
         transform: translateY(0);
