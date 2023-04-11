@@ -131,6 +131,7 @@ h2.switch {
 }
 
 #circle {
+    visibility: visible;
     position: absolute;
 
     top: 24px;
@@ -373,14 +374,13 @@ button.switch:hover {
 }
 
 #mushroom {
+    visibility: hidden;
     position: absolute;
     top: 170px;
     right: 50px;
-    /* transform: translateX(-50%); */
 
-    visibility: hidden;
     animation-name: spinningMush;
-    animation-duration: 15s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
 }
