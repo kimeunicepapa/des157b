@@ -130,6 +130,34 @@ h2.switch {
 
 }
 
+#circle {
+    position: absolute;
+
+    top: 24px;
+    right: 70px;
+
+    animation-name: rotation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+#circle:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    } 
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
 main {
     display: flex;
     align-items: flex-start;
