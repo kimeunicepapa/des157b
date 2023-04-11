@@ -146,16 +146,8 @@ h2.switch {
     animation-play-state: paused;
 }
 
-@keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    } 
-    50% {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform: rotate(0);
-    }
+#circle.switch {
+    visibility: hidden;
 }
 
 main {
@@ -359,6 +351,7 @@ button.switch:hover {
 }
 
 #capstone {
+    position: relative;
     margin-left: 10px;
 
     padding-bottom: 30px;
@@ -377,6 +370,57 @@ button.switch:hover {
     border-bottom-right-radius: 30%;
     border-top-left-radius: 20%;
     border-bottom-left-radius: 50%;
+}
+
+#mushroom {
+    position: absolute;
+    top: 170px;
+    right: 50px;
+    /* transform: translateX(-50%); */
+
+    visibility: hidden;
+    animation-name: spinningMush;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+#mushroom:hover {
+    animation-play-state: paused;
+}
+
+#mushroom.switch {
+    visibility: visible;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0);
+    } 
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes spinningMush {
+    0% {
+        transform: rotate(0);
+    } 
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+    /* 0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(100vh);
+      } */
 }
 
 @keyframes bgcolorchange {

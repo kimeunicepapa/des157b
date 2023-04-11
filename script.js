@@ -10,6 +10,8 @@
     const banner = document.querySelector('#banner');
     const classInfo = document.querySelector('#classInfo');
     const quarter = document.querySelector('#quarter');
+    const circle = document.querySelector('#circle');
+    const mushroom = document.querySelector('#mushroom');
     const sections = document.querySelectorAll('section')
     let mode = 'dark';
 
@@ -21,6 +23,8 @@
             banner.className = 'switch';
             classInfo.className = 'switch';
             quarter.className = 'switch';
+            circle.className = 'switch';
+            mushroom.className = 'switch';
             button.className = 'switch';
             button.innerHTML = 'BAUHAUS';
             
@@ -42,6 +46,8 @@
             banner.removeAttribute('class');
             classInfo.removeAttribute('class');
             quarter.removeAttribute('class');
+            circle.removeAttribute('class');
+            mushroom.removeAttribute('class');
             button.removeAttribute('class');
             button.innerHTML = 'PSYCHEDELIC';
             for (const h3 of h3s) {
