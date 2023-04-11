@@ -131,7 +131,8 @@ h2.switch {
 }
 
 #circle {
-    opacity: 1;
+
+    display: block;
     position: absolute;
 
     top: 24px;
@@ -148,7 +149,8 @@ h2.switch {
 }
 
 #circle.switch {
-    opacity: 0;
+
+    display: none;
 }
 
 main {
@@ -374,7 +376,8 @@ button.switch:hover {
 }
 
 #mushroom {
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
     position: absolute;
     top: 170px;
     right: 50px;
@@ -390,7 +393,8 @@ button.switch:hover {
 }
 
 #mushroom.switch {
-    opacity: 1;
+    /* opacity: 1; */
+    display: block;
 }
 
 @keyframes rotation {
