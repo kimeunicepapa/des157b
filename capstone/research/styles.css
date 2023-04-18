@@ -1,0 +1,15 @@
+body {
+    max-width: 1200px;
+    margin: auto;
+
+    font-family: 'DM Sans', sans-serif;
+}
+
+header {
+    padding-top: 1em;
+}
+
+p {
+    max-width: 50%;
+    font-size: 1.2em;
+}
