@@ -86,3 +86,15 @@ p {
     font-size: 40px;
     color: #F7B801;
 }
+
+.fa-expand:hover{
+    cursor: pointer;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.showing {
+    opacity: 1;
+}

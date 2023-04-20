@@ -3,8 +3,9 @@
 
     document.addEventListener('mousemove', reportPos);
     const myVideo = document.querySelector('#myVideo');
-    const myBackVideo = document.querySelector('#myBackVideo');
+    const myQuote = document.querySelector('#quote');
     const fs = document.querySelector(".fa-expand");
+
 
 
     let prevXLoc = 0;
@@ -23,6 +24,17 @@
         if(changeRotation !== prevXLoc){
             myVideo.style.transform = `rotate(${changeRotation}deg)`;
             prevXLoc = changeRotation;
+        }
+
+    }
+
+    const intervalID = setInterval(checkTime, 1000);
+
+    function checkTime(){
+        if (myVideo.currentTime > 5) {
+            quote.className = 'showing';
+        } else {
+            quote.className = 'hidden';
         }
 
     }
