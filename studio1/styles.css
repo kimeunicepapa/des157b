@@ -83,6 +83,7 @@ p {
     position: absolute;
     top: 10px;
     right: 10px;
+    z-index: 2;
     font-size: 40px;
     color: #F7B801;
 }

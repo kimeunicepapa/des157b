@@ -12,7 +12,7 @@
     function reportPos (event){
         const windowWidth = window.innerWidth;
         const widthPercent = windowWidth / 181;
-        const widthPercentScale = windowWidth / 2;
+        const widthPercentScale = windowWidth / 1;
 
         console.log(`width percent ${widthPercent}`);
         const xPos = event.clientX;
@@ -22,7 +22,7 @@
         console.log(`change rotation is ${changeRotation}`);
 
         if(changeRotation !== prevXLoc){
-            myVideo.style.transform = `rotate(${changeRotation}deg) scale(${changeScale})`;
+            myVideo.style.transform = `rotate(${changeRotation}deg) scale(${changeScale+1})`;
             prevXLoc = changeRotation;
         }
 
