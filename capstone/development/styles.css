@@ -1,3 +1,35 @@
 body {
     font-family: 'Archivo', sans-serif;
 }
+
+
+
+main {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    /* display: flex; */
+
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 5em;
+    margin-bottom: 0.2em;
+
+}
+
+h2 {
+    min-width: 200px;
+
+    color: darkolivegreen;
+}
+
+#container {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100vh; */
+}
