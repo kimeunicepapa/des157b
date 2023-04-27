@@ -1,33 +1,41 @@
 {
-    "day1":{
+    "point1":{
+       "day":"Day 1",
        "time":"July 2",
        "location":"York - United Kingdom"
     },
-    "day2":{
+    "point2":{
+       "day":"Day 2",
        "time":"July 3",
        "location":"York - United Kingdom"
     },
-    "day3":{
+    "point3":{
+       "day":"Day 3",
        "time":"July 4",
        "location":"York - United Kingdom"
     },
-    "day4":{
+    "point4":{
+        "day":"Day 4",
        "time":"July 5",
        "location":"Leeds - United Kingdom"
     },
-    "day5":{
+    "point5":{
+        "day":"Day 5",
        "time":"July 6",
        "location":"York - United Kingdom"
     },
-    "day6":{
+    "point6":{
+        "day":"Day 6",
        "time":"July 7",
        "location":"Liverpool - United Kingdom"
     },
-    "day7":{
+    "point7":{
+        "day":"Day 7",
        "time":"July 8",
        "location":"York - United Kingdom"
     },
-    "day8":{
+    "point8":{
+        "day":"Day 8",
        "time":"July 9",
        "location":"York - United Kingdom"
     }
