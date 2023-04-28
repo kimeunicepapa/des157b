@@ -51,23 +51,23 @@
     function updateInterface(value, jsonData){
         console.log(value);
 
-        let date = '';
-        let location = '';
+        let info = '';
+        // let location = '';
         let imgs = '';
-        date += `<p>${jsonData[value].day}</p>`;
-        location += `<p>${jsonData[value].location}</p>`;
+        info += `<h2>${jsonData[value].time}</h2><h2>In ${jsonData[value].location}</h2>`;
+        // location += `<h2>${jsonData[value].location}</h2>`;
 
         if (jsonData[value].hasOwnProperty('images')){
             for(let i=0; i<jsonData[value].images.length; i++){
                 console.log(jsonData[value].images[i]);
-                imgs += `<img src="${jsonData[value].images[i]}" alt="journal page">`
+                imgs += `<img src="${jsonData[value].images[i]}" alt="journal page">`;
             }
         } else {
             imgs = ``;
         }
 
-        document.querySelector('#date').innerHTML = date;
-        document.querySelector('#location').innerHTML = location;
+        document.querySelector('#info').innerHTML = info;
+        // document.querySelector('#location').innerHTML = location;
         document.querySelector('#images').innerHTML = imgs;
     }
 

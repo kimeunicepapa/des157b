@@ -1,12 +1,110 @@
+body {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    
+}
+
+h1 {
+    margin: 20px 0;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Road Rage', cursive;
+    font-size: 3em;
+}
+
+img {
+    max-width: 50%;
+    flex: 1;
+
+    box-shadow: 10px 10px;
+}
+
+img:first-of-type {
+    transform: rotate(-15deg);
+}
+
+img:nth-of-type(2) {
+    transform: rotate(10deg);
+}
+
+img:nth-of-type(3) {
+    transform: rotate(-5deg);
+}
 
 nav {
+    /* padding-top: 20px;
+    display: flex; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul {
     display: flex;
+    /* justify-content: space-between; */
+
+    margin: 0;
+    padding: 0;
 }
 
 li {
-    display: block;
+    list-style-type: none;
 }
 
 button {
-    background-color: red;
+    /* width: 50px;
+    height: 50px; */
+
+    margin: 10px;
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+
+    font-family: 'Road Rage', cursive;
+    font-size: 2em;
+    line-height: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    background-color: olivedrab;
+}
+
+#container {
+    min-width: 900px;
+    max-width: 1100px;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#images {
+    /* height: 20%; */
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+
+    /* grid-template-columns: 1fr -5px; */
+
 }
