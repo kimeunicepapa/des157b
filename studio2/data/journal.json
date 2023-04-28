@@ -1,49 +1,41 @@
 {
     "Day 1":{
-       "day":"Day 1",
        "time":"July 2, 2022",
        "location":"York",
        "images":["images/july2-1.jpeg", "images/july2-2.jpeg"]
     },
     "Day 2":{
-       "day":"Day 2",
        "time":"July 3, 2022",
        "location":"York",
        "images":["images/july3-1.jpeg", "images/july3-2.jpeg", "images/july3-3.jpeg"]
     },
     "Day 3":{
-       "day":"Day 3",
        "time":"July 4, 2022",
        "location":"York",
        "images":["images/july4-1.jpeg", "images/july4-2.jpeg", "images/july4-3.jpeg"]
     },
     "Day 4":{
-        "day":"Day 4",
        "time":"July 5, 2022",
        "location":"Leeds",
        "images":["images/july5-1.jpeg", "images/july5-2.jpeg"]
     },
     "Day 5":{
-        "day":"Day 5",
        "time":"July 6, 2022",
        "location":"York",
        "images":["images/july6-1.jpeg", "images/july6-2.jpeg"]
        
     },
     "Day 6":{
-        "day":"Day 6",
        "time":"July 7, 2022",
        "location":"Liverpool",
        "images":["images/july7-1.jpeg", "images/july7-2.jpeg"]
     },
     "Day 7":{
-        "day":"Day 7",
        "time":"July 8, 2022",
        "location":"York",
        "images":["images/july8-1.jpeg", "images/july8-2.jpeg"]
     },
     "Day 8":{
-        "day":"Day 8",
        "time":"July 9, 2022",
        "location":"York",
        "images":["images/july9-1.jpeg", "images/july9-2.jpeg"]
