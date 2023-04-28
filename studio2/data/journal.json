@@ -1,42 +1,51 @@
 {
-    "point1":{
+    "1":{
        "day":"Day 1",
        "time":"July 2",
-       "location":"York - United Kingdom"
+       "location":"York",
+       "images":["images/july2-1.png", "images/july2-2.png"]
     },
-    "point2":{
+    "2":{
        "day":"Day 2",
        "time":"July 3",
-       "location":"York - United Kingdom"
+       "location":"York",
+       "images":["images/july3-1.png", "images/july3-2.png", "images/july3-3.png"]
     },
-    "point3":{
+    "3":{
        "day":"Day 3",
        "time":"July 4",
-       "location":"York - United Kingdom"
+       "location":"York",
+       "images":["images/july4-1.png", "images/july4-2.png", "images/july4-3.png", "images/july4-4.png"]
     },
-    "point4":{
+    "4":{
         "day":"Day 4",
        "time":"July 5",
-       "location":"Leeds - United Kingdom"
+       "location":"Leeds",
+       "images":["images/july5-1.png", "images/july5-2.png"]
     },
-    "point5":{
+    "5":{
         "day":"Day 5",
        "time":"July 6",
-       "location":"York - United Kingdom"
+       "location":"York",
+       "images":["images/july6-1.png", "images/july6-2.png"]
+       
     },
-    "point6":{
+    "6":{
         "day":"Day 6",
        "time":"July 7",
-       "location":"Liverpool - United Kingdom"
+       "location":"Liverpool",
+       "images":["images/july7-1.png", "images/july7-2.png"]
     },
-    "point7":{
+    "7":{
         "day":"Day 7",
        "time":"July 8",
-       "location":"York - United Kingdom"
+       "location":"York",
+       "images":["images/july8-1.png", "images/july8-2.png"]
     },
-    "point8":{
+    "8":{
         "day":"Day 8",
        "time":"July 9",
-       "location":"York - United Kingdom"
+       "location":"York",
+       "images":["images/july9-1.png", "images/july59-2.png"]
     }
  }

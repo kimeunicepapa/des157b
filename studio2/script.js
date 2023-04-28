@@ -8,11 +8,68 @@
     async function getData(){
         const myData = await fetch('data/journal.json');
         const data = await myData.json();
+        globalData = data;
+    
+        //put values into globalData array
+        // globalData = Object.values(data);
+        //get number of entries in json
+        // numDataPoints = dataPoints.length;
+
+        document.querySelector('nav ul').innerHTML = createButtons(data);
+
+        createEvents();
+    }
+
+    // function showPointInfo(point, data){
+    //     document.querySelector('#date').innerHTML = data[point].date;
+    //     document.querySelector('#time').innerHTML = data[point].time;
+    //     document.querySelector('#location').innerHTML = data[point].location;
+    // }
+
+    function createButtons(data){
+        let html = ''
         //put keys in array
         const dataPoints = Object.keys(data);
-        //put values into globalData array
-        globalData = Object.values(data);
-        //get number of entries in json
-        numDataPoints = dataPoints.length;
+        console.log(dataPoints);
+        dataPoints.forEach(function(eachPoint){
+            html += `<li><button id="${eachPoint}">${eachPoint}</button></li>`;
+        })
+        return html;
     }
+
+    function createEvents(){
+        const buttons = document.querySelectorAll('button');
+
+        for (const button of buttons){
+            button.addEventListener('click', function(event){
+                const id = event.target.id;
+                updateInterface(id, globalData);
+            })
+        }
+    }
+
+    function updateInterface(value, jsonData){
+        console.log(value);
+
+        let date = '';
+        let location = '';
+        let imgs = '';
+        date += `<p>${jsonData[value].day}</p>`;
+        location += `<p>${jsonData[value].location}</p>`;
+
+        if (jsonData[value].hasOwnProperty('images')){
+            for(let i=0; i<jsonData[value].images.length; i++){
+                console.log(jsonData[value].images[i]);
+                imgs += `<img src="${jsonData[value].images[i]}" alt="journal page">`
+            }
+        } else {
+            imgs = ``;
+        }
+
+        document.querySelector('#date').innerHTML = date;
+        document.querySelector('#location').innerHTML = location;
+        document.querySelector('#images').innerHTML = imgs;
+    }
+
+    getData();
 })();

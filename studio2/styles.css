@@ -1,0 +1,12 @@
+
+nav {
+    display: flex;
+}
+
+li {
+    display: block;
+}
+
+button {
+    background-color: red;
+}
