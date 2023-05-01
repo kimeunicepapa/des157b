@@ -2,8 +2,10 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    background-color: bisque;
-    
+    background-color: #90c1d5;
+    background-image: url(images/papertexture.JPG);
+    background-attachment: fixed;
+    background-blend-mode: overlay;
 }
 
 h1 {
@@ -25,6 +27,7 @@ img {
     flex: 1;
 
     box-shadow: 10px 10px;
+    transition: all 2s ease-in-out;
 }
 
 img:first-of-type {
@@ -63,7 +66,16 @@ li {
     list-style-type: none;
 }
 
+li:nth-of-type(2n){
+    transform: rotate(5deg);
+}
+li:nth-of-type(2n+1){
+    transform: rotate(-5deg);
+}
+
 button {
+
+    width: 100px;
     margin: 5px;
     padding:10px;
     border: 0;
@@ -78,19 +90,16 @@ button {
     text-transform: uppercase;
 }
 
-li:nth-of-type(2n){
-    transform: rotate(5deg);
-}
-li:nth-of-type(2n+1){
-    transform: rotate(-5deg);
-}
-
 button:hover {
     cursor: pointer;
 }
 
 button:focus {
-    background-color: olivedrab;
+    background-color: #BA1200;
+    animation-name: wiggle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #container {
@@ -111,4 +120,13 @@ button:focus {
 
     /* grid-template-columns: 1fr -5px; */
 
+}
+
+@keyframes wiggle {
+    0%{
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
 }
