@@ -28,6 +28,10 @@ h2 {
     color: darkolivegreen;
 }
 
+cite {
+    text-indent: 50px;
+}
+
 #container {
     display: flex;
     /* justify-content: center; */
