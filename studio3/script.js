@@ -29,8 +29,10 @@
         // query.equalTo('objectId', 'xKue915KBG');
         try {
           const results = await query.find();
+
           results.forEach(function(eachLove) {
             // Access the Parse Object attributes using the .GET method
+            const id = eachLove.id;
             const lovemsg = eachLove.get('lovemsg');
             console.log(lovemsg);
 
@@ -74,7 +76,7 @@
         }
         if (newLove.lovemsg !=""){
             const newLoveData = new Parse.Object('Love');
-            newLoveData.set = ('lovemsg', newLove.lovemsg);
+            newLoveData.set('lovemsg', newLove.lovemsg);
             // newLoveData.set('lovemsg');
             try {
                 const result = await newLoveData.save();
