@@ -1,7 +1,7 @@
 (function(){
     'use strict';
 
-    Parse.initialize("jsBJY51ikHQMBJMShMNiE8v3J9pchT5npZkYug5J","gC3N3rPJBr9iD5sElZMzetvz4QcenjDgKzAeba0Z"); 
+    Parse.initialize("Ccn4NLbCJ5JzqOGir3MRX8dNzfnJOkSSL7EUywu4","vBhc8IVEn1QyGW96K0iyy9uHxpRhSRpqBX5TW8Ky"); 
     Parse.serverURL = 'https://parseapi.back4app.com/';
 
 
@@ -9,6 +9,48 @@
     const notLove = document.getElementById("notlove");
     const sendLoveForm = document.getElementById("send-love");
     const notLoveForm = document.getElementById("not-love");
+    const loveList = document.querySelector("main ol");
+    const inputs = document.querySelectorAll("#send-love input:not([type=submit])");
+
+
+    // async function displayLove() {
+    //     const friends = Parse.Object.extend('Love');
+    //     const query = new Parse.Query(Love);
+    //     const results = await query.ascending('love').find();
+    //     console.log(results);
+    // }
+    
+    // displayLove();
+
+    async function displayLove(){
+        const love = Parse.Object.extend('Love');
+        const query = new Parse.Query(love);
+        // You can also query by using a parameter of an object
+        // query.equalTo('objectId', 'xKue915KBG');
+        try {
+          const results = await query.find();
+          results.forEach(function(eachLove) {
+            // Access the Parse Object attributes using the .GET method
+            const lovemsg = eachLove.get('lovemsg');
+            console.log(lovemsg);
+
+            const theLoveItem = document.createElement("li");
+            theLoveItem.setAttribute("id", `r-${id}`);
+            theLoveItem.innerHTML = ` 
+            <h2>I love...</h2>
+            <div class="love">
+                ${lovemsg}
+            </div>`;
+
+            loveList.append(theLoveItem);
+          });
+        } catch (error) {
+          console.error('Error while fetching Love', error);
+        }
+    };
+
+    displayLove();
+    
 
     sendLove.addEventListener('click', function(event){
         event.preventDefault();
@@ -19,8 +61,36 @@
         event.preventDefault();
         sendLoveForm.className = "send-love-offscreen";
 
-        // addFriend();
+        addLove();
     })
+
+    async function addLove() {
+        const newLove = {};
+
+        for (let i=0; i<inputs.length; i++){
+            let key = inputs[i].getAttribute('name');
+            let value = inputs[i].value;
+            newLove[key] = value;
+        }
+        if (newLove.lovemsg !=""){
+            const newLoveData = new Parse.Object('Love');
+            newLoveData.set = ('lovemsg', newLove.lovemsg);
+            // newLoveData.set('lovemsg');
+            try {
+                const result = await newLoveData.save();
+                // Access the Parse Object attributes using the .GET method
+                resetFormFields();
+                sendLoveForm.className = "send-love-offscreen";
+                loveList.innerHTML = '';
+                displayLove();
+                console.log('Love created', result);
+            } catch (error) {
+                console.error('Error while creating Love: ', error);
+            }
+        } else {
+            sendLoveForm.className = "send-love-offscreen";
+        }
+    }
 
     notLove.addEventListener('click', function(event){
         event.preventDefault();
@@ -33,4 +103,9 @@
 
         // addFriend();
     })
+
+    function resetFormFields(){
+        document.getElementById("lovemsg").value = "";
+       
+    }
 })();
