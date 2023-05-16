@@ -1,8 +1,8 @@
 (function(){
     'use strict';
 
-    Parse.initialize("jsBJY51ikHQMBJMShMNiE8v3J9pchT5npZkYug5J","gC3N3rPJBr9iD5sElZMzetvz4QcenjDgKzAeba0Z"); 
-    Parse.serverURL = 'https://parseapi.back4app.com/'
+    Parse.initialize("Ccn4NLbCJ5JzqOGir3MRX8dNzfnJOkSSL7EUywu4","vBhc8IVEn1QyGW96K0iyy9uHxpRhSRpqBX5TW8Ky"); 
+    Parse.serverURL = 'https://parseapi.back4app.com/';
 
     const newBtn = document.getElementById('newbtn');
     const editBtns = document.querySelectorAll('.fa-edit');
