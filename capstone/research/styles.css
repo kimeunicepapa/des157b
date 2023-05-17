@@ -1,8 +1,7 @@
 body {
     font-family: 'Archivo', sans-serif;
+    background-color: rgb(242, 255, 230);
 }
-
-
 
 main {
     position: absolute;
@@ -26,6 +25,14 @@ h2 {
     padding-right: 20px;
 
     color: darkolivegreen;
+}
+
+p {
+    line-height: 1.3em;
+}
+
+li {
+    line-height: 1.3em;
 }
 
 cite {
