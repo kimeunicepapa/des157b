@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     
     <!--/ /-------- Google Fonts --------/ /-->
-    <link href="https://fonts.googleapis.com/css?family=Baloo|IBM+Plex+Sans+Condensed:300,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital@0;1&family=Fraunces:ital,wght@1,700&display=swap" rel="stylesheet">
     
     <!--/ /-------- Site Styling --------/ /-->
     <link href="styles.css" rel="stylesheet">
@@ -22,8 +24,9 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Dear Davis,</h1>
+        <h1>Dear Davis,</h1>
+        <div class="lovebutton">
+            <a href="#" id="sendlove">I love...</a>
         </div>
     </header>
     <main>
@@ -46,20 +49,16 @@
         <input type="submit" value="Send Love">
     </form>
 
-    <form id="not-love" class="not-love-offscreen">
+    <!-- <form id="not-love" class="not-love-offscreen">
         <h2>Dear Davis,</h2>
 
         <label for="notlove">I do not love</label>
         <input type="text" id="notlovve" name="notlove" placeholder="the traffic">
 
         <input type="submit" value="Send Not Love">
-    </form>
+    </form> -->
 
     <footer>
-        <div class="container">
-            <a href="#" id="sendlove">Love<i class="fas fa-user-plus"></i></a>
-            <a href="#" id="notlove">Not Love<i class="fas fa-user-plus"></i></a>
-        </div>
         <p>Library used: Back4app</p>
     </footer>
     <script src="script.js"></script>
