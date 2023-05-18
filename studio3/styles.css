@@ -31,27 +31,12 @@ header h1 {
     margin: auto;
 }
 
-footer {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    padding: 10px 0;
-
-    text-align: center;
-    background: #29335C;
-}
-
-footer p {
-    color: #1C7947;
-}
-
 main {
     padding: 200px 20px 0 20px;
 }
 main ol {
     display: flex;
+    flex-wrap: wrap;
 }
 
 main ol li {
@@ -68,6 +53,22 @@ main ol li {
 main ol li div {
     padding: 10px 0;
     /* border-bottom: 1px solid #f0f0f0; */
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding: 10px 0;
+
+    text-align: center;
+    background: #29335C;
+}
+
+footer p {
+    color: #1C7947;
 }
 
 
@@ -90,11 +91,15 @@ main ol li div {
 }
 
 .lovebutton a {
-    width: 50%;
+    position: fixed;
+    top: 200px;
+    right: 0;
+    width: 150px;
     padding: 20px 50px;
 
     font-size: 2em;
     text-decoration: none;
+    text-align: center;
     background-color: #FFFD95;
     color: black;
     border-radius: 20px;
