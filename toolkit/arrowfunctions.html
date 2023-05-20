@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+    <style>
+        html {
+            background-color: #efefef;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.4em;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Arrow functions</h1>
+
+    <p>The function calculates the sum of two numbers. I've created this function for this exercise.</p>
+
+    <h2>Named Function</h2>
+    <code>
+        <pre>
+            function totalNumber(x, y){
+                const sum = x+y;
+                return `the sum is ${sum}`;
+            }
+        </pre>
+    </code>
+
+    <h2>Function Expression</h2>
+    <code>
+        <pre>
+            const totalNumber = function(x, y) {
+                const sum = x + y;
+                return `the sum is ${sum}`;
+            };
+        </pre>
+    </code>
+
+    <h2>Arrow Function</h2>
+    <code>
+        <pre>
+            const totalNumber = (x, y) => {
+                const sum = x + y;
+                return `the sum is ${sum}`;
+            };
+        </pre>
+    </code>
+
+    <footer> Your Name </footer>
+    
+    <script>
+        // function totalNumber (x, y) {
+        //     const sum = x + y;
+        //     return `the sum is ${sum}`;
+        // };
+
+        // const totalNumber = function(x, y) {
+        //     const sum = x + y;
+        //     return `the sum is ${sum}`;
+        // };
+
+        const totalNumber = (x, y) => {
+            const sum = x + y;
+            return `the sum is ${sum}`;
+        };
+
+        console.log(totalNumber(3,2));
+    </script>
+    
+</body>
+</html>
