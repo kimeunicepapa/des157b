@@ -21,27 +21,30 @@
      <!--/ /-------- Parse library --------/ /-->
      <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
 
+     <!--/ /-------- Macy library --------/ /-->
+     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+
+
 </head>
 <body>
     <header>
-        <h1>Dear Davis,</h1>
+        <h1>Dear Self,</h1>
         <div class="lovebutton">
             <a href="#" id="sendlove">I love...</a>
         </div>
     </header>
     <main>
-        <ol class="container">
+        <ol id="container">
             <!-- <li>
                 <h2>I love...</h2>
                 <div class="love">
                     LoveMessage
                 </div>
             </li> -->
-
         </ol>
     </main>
     <form id="send-love" class="send-love-offscreen">
-        <h2>Dear Davis,</h2>
+        <h2>A message to yourself</h2>
 
         <label for="love">I love...</label>
         <input type="text" id="lovemsg" name="lovemsg" placeholder="the arboretum">

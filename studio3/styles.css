@@ -1,5 +1,5 @@
 /*********** Basic Resets ************/
-h1, h2, h3, p, ol, li { 
+h2, h3, p, ol, li { 
     margin: 0;
     padding: 0;
 }
@@ -8,8 +8,8 @@ body {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-weight: 300;
     color: #333;
-    background-color: #1C7947;
-
+    background-color: rgb(236, 163, 181);
+    /* background: content-box radial-gradient(rgb(226, 158, 103), rgb(0, 15, 179)); */
 }
 header {
     position: fixed;
@@ -18,46 +18,57 @@ header {
     padding: 20px;
 }
 
-header h1 {
+h1 {
+    margin: 0;
+    padding-bottom: 20px;
     font-family: 'Fraunces', serif;
     font-size: 13vw;
-    color: #FFFD95;
-    text-shadow: 5px 5px 5px 5px #166039;
-}
-
-
-.container {
-    max-width: 600px;
-    margin: auto;
+    color: rgb(0, 0, 156);
+    text-shadow: rgb(0, 21, 255) 1px 0 10px;;
 }
 
 main {
-    padding: 200px 20px 0 20px;
+    padding: 300px 20px 100px 20px;
 }
-main ol {
+/* main ol {
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
 main ol li {
-    min-width: 100px;
-    box-shadow: 0px 0px 8px 0px #b8b8b8;
-    background-color: #fff;
+    /* min-width: 200px; */
+    text-align: center;
     border-radius: 50%;
-    padding: 40px;
+    padding: 60px;
     margin: 20px;
     list-style-type: none;
     position: relative;
 }
 
-main ol li div {
-    padding: 10px 0;
-    /* border-bottom: 1px solid #f0f0f0; */
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 80px;
+
+}
+
+li {
+    position: relative;
+    z-index: 1;
+}
+
+li img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
 footer {
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     left: 0;
     z-index: 1;

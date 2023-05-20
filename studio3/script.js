@@ -1,6 +1,25 @@
 (function(){
     'use strict';
 
+    // var macyInstance = Macy({
+    //     // See below for all available options.
+    //     container: '#container',
+    //     trueOrder: false,
+    //     margin: 20,
+    //     waitForImages: true,
+    //     debug: true,
+    //     columns: 3,
+    //     breakAt: {
+    //         1200: 3,
+    //         940: 2,
+    //         520: 1,
+    //     },
+    // });
+
+    // macyInstance.runOnImageLoad(function () {
+    //     macyInstance.recalculate(true);
+    //   }, true);
+
     Parse.initialize("Ccn4NLbCJ5JzqOGir3MRX8dNzfnJOkSSL7EUywu4","vBhc8IVEn1QyGW96K0iyy9uHxpRhSRpqBX5TW8Ky"); 
     Parse.serverURL = 'https://parseapi.back4app.com/';
 
@@ -9,7 +28,7 @@
     const notLove = document.getElementById("notlove");
     const sendLoveForm = document.getElementById("send-love");
     const notLoveForm = document.getElementById("not-love");
-    const loveList = document.querySelector("main ol");
+    const loveList = document.querySelector("#container");
     const inputs = document.querySelectorAll("#send-love input:not([type=submit])");
 
 
@@ -40,6 +59,7 @@
             theLoveItem.setAttribute("id", `r-${id}`);
             theLoveItem.innerHTML = ` 
             <h2>I love...</h2>
+            <div class="flower"><img src="images/daisy.png" alt="daisy"></div>
             <div class="love">
                 ${lovemsg}
             </div>`;
@@ -94,17 +114,17 @@
         }
     }
 
-    notLove.addEventListener('click', function(event){
-        event.preventDefault();
-        notLoveForm.className = "not-love-onscreen";
-    })
+    // notLove.addEventListener('click', function(event){
+    //     event.preventDefault();
+    //     notLoveForm.className = "not-love-onscreen";
+    // })
 
-   notLoveForm.addEventListener('submit', function(event){
-        event.preventDefault();
-        notLoveForm.className = "not-love-offscreen";
+//    notLoveForm.addEventListener('submit', function(event){
+//         event.preventDefault();
+//         notLoveForm.className = "not-love-offscreen";
 
-        // addFriend();
-    })
+//         // addFriend();
+//     })
 
     function resetFormFields(){
         document.getElementById("lovemsg").value = "";
