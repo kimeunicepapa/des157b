@@ -64,14 +64,11 @@ main section {
 
     font-family: 'Fraunces', serif;
     font-size: 5em;
+    font-style: italic;
     text-align: center;
     color: black;
 }
 
-section div {
-    /* padding-top: ; */
-    /* padding-bottom: 100px; */
-}
 
 li {
     position: relative;
