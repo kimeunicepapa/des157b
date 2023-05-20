@@ -11,6 +11,7 @@ body {
     background-color: rgb(236, 163, 181);
     /* background: content-box radial-gradient(rgb(226, 158, 103), rgb(0, 15, 179)); */
 }
+
 header {
     position: fixed;
     width: 100%;
@@ -18,13 +19,16 @@ header {
     padding: 20px;
 }
 
+
 h1 {
     margin: 0;
     padding-bottom: 20px;
     font-family: 'Fraunces', serif;
+    font-style: italic;
     font-size: 13vw;
-    color: rgb(0, 0, 156);
-    text-shadow: rgb(0, 21, 255) 1px 0 10px;;
+    text-align: center;
+    color: rgb(173, 0, 0);
+    text-shadow: rgb(195, 59, 59) 2px 0 10px;;
 }
 
 main {
@@ -39,18 +43,34 @@ main ol li {
     /* min-width: 200px; */
     text-align: center;
     border-radius: 50%;
-    padding: 60px;
-    margin: 20px;
+    padding: 60px 0;
+    margin: 20px 0;
     list-style-type: none;
     position: relative;
 }
 
 #container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    /* column-gap: 10%; */
     row-gap: 80px;
+}
 
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+
+    font-family: 'Fraunces', serif;
+    font-size: 5em;
+    text-align: center;
+    color: black;
+}
+
+section div {
+    /* padding-top: ; */
+    /* padding-bottom: 100px; */
 }
 
 li {
@@ -75,17 +95,17 @@ footer {
     padding: 10px 0;
 
     text-align: center;
-    background: #29335C;
 }
 
 footer p {
-    color: #1C7947;
+    color: black;
 }
 
 
 /* Love messages styling*/
 
 .love {
+    padding: 0 40px;
     bottom: 0;
     font-size: 1.5em;
 }
@@ -93,26 +113,25 @@ footer p {
 /* Love button styling */
 
 .lovebutton {
-    /* position: sticky; */
     margin-top: 20px;
-    top: 0px;
-    right: 0px;
-
     z-index:3;
 }
 
 .lovebutton a {
     position: fixed;
-    top: 200px;
-    right: 0;
-    width: 150px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
     padding: 20px 50px;
 
-    font-size: 2em;
+    font-family: Fraunces;
+    font-size: 1.5em;
+    font-weight: 200;
     text-decoration: none;
     text-align: center;
-    background-color: #FFFD95;
-    color: black;
+    background-color: rgb(194, 0, 0);
+    color: white;
     border-radius: 20px;
 }
 /*************** Forms ****************/
@@ -122,26 +141,40 @@ footer p {
     /* background: linear-gradient(23deg, rgba(74,183,251,1) 0%, rgba(12,111,173,1) 100%); */
     color: #fff;
     box-sizing: border-box;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
     padding: 20px;
-    width: 50%;
+    width: 40%;
     position: fixed;
     margin: auto;
-    z-index: 0;
+    z-index: 3;
 }
 
 
-.send-love-offscreen { bottom: -130px; transition: all 500ms cubic-bezier(0.600, 0.040, 0.980, 0.335); }
-.send-love-onscreen { bottom: 76px;  transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000);}
+.send-love-offscreen {
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 500ms ease-in-out; 
+}
+.send-love-onscreen { 
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    transition: all 500ms ease-in-out;
+}
 
+#send-love h2 {
+    padding: 10px 0;
+}
 
 
 label, input {
     display: block;
 }
 label {
-    margin-bottom: 5px;
+    font-family: 'Fraunces';
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 input {
     box-sizing: border-box;

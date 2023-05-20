@@ -13,10 +13,8 @@
     <!--/ /-------- Google Fonts --------/ /-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital@0;1&family=Fraunces:ital,wght@1,700&display=swap" rel="stylesheet">
-    
-    <!--/ /-------- Site Styling --------/ /-->
-    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital@0;1&family=Fraunces:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap" rel="stylesheet">
+
 
      <!--/ /-------- Parse library --------/ /-->
      <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
@@ -24,34 +22,49 @@
      <!--/ /-------- Macy library --------/ /-->
      <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
 
+     <!--/ /-------- Animate on Scroll --------/ /-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--/ /-------- Site Styling --------/ /-->
+    <link href="styles.css" rel="stylesheet">
+
 
 </head>
 <body>
+
     <header>
         <h1>Dear Self,</h1>
         <div class="lovebutton">
-            <a href="#" id="sendlove">I love...</a>
+            <a href="#" id="sendlove">Write a message</a>
         </div>
     </header>
     <main>
-        <ol id="container">
-            <!-- <li>
-                <h2>I love...</h2>
-                <div class="love">
-                    LoveMessage
-                </div>
-            </li> -->
-        </ol>
+            <ol id="container">
+                <!-- <div data-aos="fade-up">
+                <li>
+                    <h2>I love...</h2>
+                    <div class="love">
+                        LoveMessage
+                    </div>
+                </li>
+                </div> -->
+            </ol>
+        <section>
+            <div data-aos="fade-up"
+            data-aos-duration="3000">
+            You are valid</div>
+        </section>
     </main>
     <form id="send-love" class="send-love-offscreen">
-        <h2>A message to yourself</h2>
+        <h2>Complete the sentence</h2>
 
         <label for="love">I love...</label>
-        <input type="text" id="lovemsg" name="lovemsg" placeholder="the arboretum">
+        <input type="text" id="lovemsg" name="lovemsg" placeholder="the arboretum" maxlength="10">
 
         <input type="submit" value="Send Love">
     </form>
-
     <!-- <form id="not-love" class="not-love-offscreen">
         <h2>Dear Davis,</h2>
 
@@ -61,8 +74,9 @@
         <input type="submit" value="Send Not Love">
     </form> -->
 
+
     <footer>
-        <p>Library used: Back4app</p>
+        <p>Library used: Back4app and Animate on Scroll</p>
     </footer>
     <script src="script.js"></script>
 </body>

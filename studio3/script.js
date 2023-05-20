@@ -22,6 +22,7 @@
 
     Parse.initialize("Ccn4NLbCJ5JzqOGir3MRX8dNzfnJOkSSL7EUywu4","vBhc8IVEn1QyGW96K0iyy9uHxpRhSRpqBX5TW8Ky"); 
     Parse.serverURL = 'https://parseapi.back4app.com/';
+    AOS.init();
 
 
     const sendLove = document.getElementById("sendlove");
@@ -57,12 +58,12 @@
 
             const theLoveItem = document.createElement("li");
             theLoveItem.setAttribute("id", `r-${id}`);
-            theLoveItem.innerHTML = ` 
-            <h2>I love...</h2>
-            <div class="flower"><img src="images/daisy.png" alt="daisy"></div>
+            theLoveItem.innerHTML = `
+            <h2>I love</h2>
+            <div class="flower"><img src="images/daisy.png" alt="daisy">
             <div class="love">
                 ${lovemsg}
-            </div>`;
+            </div></div>`;
 
             loveList.append(theLoveItem);
           });
@@ -130,4 +131,5 @@
         document.getElementById("lovemsg").value = "";
        
     }
+    
 })();
