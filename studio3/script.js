@@ -59,7 +59,7 @@
             const theLoveItem = document.createElement("li");
             theLoveItem.setAttribute("id", `r-${id}`);
             theLoveItem.innerHTML = `
-            <h2>I love</h2>
+            <h2>I love my</h2>
             <div class="flower"><img src="images/daisy.png" alt="daisy">
             <div class="love">
                 ${lovemsg}
