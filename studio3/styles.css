@@ -1,4 +1,8 @@
 /*********** Basic Resets ************/
+* {
+    box-sizing: border-box;
+}
+
 h2, h3, p, ol, li { 
     margin: 0;
     padding: 0;
@@ -56,17 +60,24 @@ main ol li {
     row-gap: 80px;
 }
 
-main section {
+section {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40vh;
+    margin-top: 50px;
+    height: 70vh;
+
 
     font-family: 'Fraunces', serif;
     font-size: 5em;
     font-style: italic;
     text-align: center;
     color: black;
+    background-color: rgb(236, 163, 181);
+}
+
+section div {
+    padding-bottom: 10vh;
 }
 
 
@@ -119,7 +130,7 @@ footer p {
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 200px;
+    width: 50%;
     padding: 20px 50px;
 
     font-family: Fraunces;
