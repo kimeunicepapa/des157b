@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 30px;
+}
+
+main {
+    display: flex;
+}
+
+#left {
+    width: 50%;
+    background-color: lightblue;
+}
+
+#right {
+    width: 50%;
+    background-color: bisque;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 7em;
+}
+
+ol {
+    text-decoration: none;
+    list-style-type:none;
+}
