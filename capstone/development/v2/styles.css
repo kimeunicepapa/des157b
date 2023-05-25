@@ -4,6 +4,7 @@
 
 body {
     margin: 30px;
+    font-family: "Marcellus", sans-serif;
 }
 
 main {
@@ -15,9 +16,23 @@ main {
     background-color: lightblue;
 }
 
+#left:hover {
+    cursor: pointer;
+}
+
+/* main:hover #right{
+    opacity: .2;
+    background-color: red;
+} */
+
 #right {
     width: 50%;
     background-color: bisque;
+}
+
+h1, h2 {
+    font-family: 'Fraunces', serif;
+    
 }
 
 h1 {
@@ -35,9 +50,31 @@ ol {
     list-style-type:none;
 }
 
+li {
+    position: relative;
+    z-index: 1;
+}
+
+li img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.love {
+    padding: 0 40px;
+    bottom: 0;
+    font-size: 1.5em;
+}
+
+
+
 /*////////////////// FORM STYLING //////////////////*/
 
 form {
+    position: fixed;
     width: 40%;
     margin: auto;
     z-index: 3;
@@ -100,9 +137,37 @@ input[type=submit]:hover {
 
 }
 
+.love-form-onscreen {
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    transition: all 500ms ease-in-out;
+}
+
+.love-form-offscreen {
+    bottom: -70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 500ms ease-in-out; 
+}
+
+.advice-form-onscreen {
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    transition: all 500ms ease-in-out;
+}
+
+.advice-form-offscreen {
+    bottom: -70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 500ms ease-in-out; 
+}
+
 /*////////////////// BUTTON STYLING //////////////////*/
 
-#button {
+.button {
     position: fixed;
     top: 90%;
     left: 50%;
@@ -110,12 +175,15 @@ input[type=submit]:hover {
     width: 50%;
     padding: 20px 50px;
 
-    font-family: Fraunces;
+    font-family: 'Fraunces', serif;
     font-size: 1.5em;
     font-weight: 200;
-    text-decoration: none;
     text-align: center;
     background-color: black;
-    color: white;
     border-radius: 20px;
+}
+
+#love-button, #advice-button {
+    text-decoration: none;
+    color: white;
 }

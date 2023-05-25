@@ -13,7 +13,10 @@
     <!--/ /-------- Google Fonts --------/ /-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital@0;1&family=Fraunces:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&family=Marcellus&display=swap" rel="stylesheet">
+
+     <!--/ /-------- Load Parse Library --------/ /-->
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
 
     <link href="styles.css" rel="stylesheet">
 
@@ -28,14 +31,14 @@
             <section>
                 <h2>Love messages to appreciate the city</h2>
                 <ol id="loveContainer">
-                    <div data-aos="fade-up">
+                    <!-- <div data-aos="fade-up">
                     <li>
                         <h2>I love...</h2>
                         <div class="love">
                             LoveMessage
                         </div>
                     </li>
-                    </div>
+                    </div> -->
                 </ol>
 
             </section>
@@ -78,7 +81,10 @@
     
     <footer>
         <div class="button">
-            <a href="#" id="button">Submit a thought</a>
+            <a href="#" id="love-button">Submit a thought</a>
+        </div>
+        <div class="button">
+            <a href="#" id="advice-button">Submit a thought</a>
         </div>
         <p>Library used: Back4app</p>
     </footer>
