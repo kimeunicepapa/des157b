@@ -67,6 +67,22 @@ input {
     font-size: 13px;
 }
 
+input[type=submit] {
+    width: 30%;
+    float: right;
+    padding: 10px;
+
+    border: none;
+    color: lightpink;
+    background-color: black;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+
+}
+
 /*////////////////// BUTTON STYLING //////////////////*/
 
 #button {
