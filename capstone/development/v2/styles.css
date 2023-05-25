@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 30px;
+}
+
+main {
+    display: flex;
+}
+
+#left {
+    width: 50%;
+    background-color: lightblue;
+}
+
+#right {
+    width: 50%;
+    background-color: bisque;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 7em;
+}
+
+
+/*////////////////// ENTRIES STYLING //////////////////*/
+
+ol {
+    text-decoration: none;
+    list-style-type:none;
+}
+
+/*////////////////// FORM STYLING //////////////////*/
+
+form {
+    width: 40%;
+    margin: auto;
+    z-index: 3;
+    padding: 20px;
+
+    background-color: lightpink;
+    border-radius: 10px;
+    color: black;
+}
+
+label,input {
+    display: block;
+}
+
+label {
+    font-family: 'Fraunces';
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+input {
+    box-sizing: border-box;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 2px solid #e9e9e9;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+
+    border: 3px dotted purple;
+    border-radius: 10px;
+    resize: vertical;
+    background-color: lightgoldenrodyellow;
+    outline: none;
+}
+
+textarea:focus {
+    border: 3px solid purple;
+    background-color: white;
+}
+
+input[type=submit] {
+    width: 30%;
+    padding: 10px;
+    margin: 10px auto;
+
+    border: none;
+    border-radius: 10px;
+    color: lightpink;
+    background-color: black;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+
+}
+
+/*////////////////// BUTTON STYLING //////////////////*/
+
+#button {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding: 20px 50px;
+
+    font-family: Fraunces;
+    font-size: 1.5em;
+    font-weight: 200;
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
