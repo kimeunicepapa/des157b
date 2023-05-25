@@ -67,6 +67,10 @@ input {
     font-size: 13px;
 }
 
+textarea{
+    width: 100%;
+}
+
 input[type=submit] {
     width: 30%;
     float: right;
