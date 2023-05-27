@@ -3,21 +3,56 @@
 }
 
 body {
-    margin: 30px;
+
     font-family: "Marcellus", sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: 'Fraunces', serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 7em;
 }
 
 main {
     display: flex;
+
+    padding: 0px 0px 100px 0px;
 }
+
+/* main div {
+    margin-top: 200px;
+} */
 
 #left {
     width: 50%;
-    background-color: lightblue;
+    padding-top: 200px;
+    /* background-color: lightblue; */
+    filter: blur(10px);
+    opacity: 0.3;
+    transition: all 1s ease-in-out;
 }
 
 #left:hover {
     cursor: pointer;
+    filter: blur(0rem);
+    opacity: 1;
+    transition: all 0.7s ease-in-out;
+    
 }
 
 /* main:hover #right{
@@ -27,27 +62,33 @@ main {
 
 #right {
     width: 50%;
-    background-color: bisque;
+    padding-top: 200px;
+    /* background-color: lightblue; */
+    filter: blur(1rem);
+    opacity: 0.3;
+    transition: all 1s ease-in-out;
 }
 
-h1, h2 {
-    font-family: 'Fraunces', serif;
-    
+#right:hover {
+    cursor: pointer;
+    filter: blur(0rem);
+    opacity: 1;
+    transition: all 0.7s ease-in-out;
 }
 
-h1 {
-    font-family: 'Fraunces', serif;
-    font-weight: 800;
-    font-style: italic;
-    font-size: 7em;
+
+section {
+    padding: 0 20px;
 }
+
+
 
 
 /*////////////////// ENTRIES STYLING //////////////////*/
 
 ol {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 80px;
 
     text-decoration: none;
@@ -177,21 +218,33 @@ input[type=submit]:hover {
 
 /*////////////////// BUTTON STYLING //////////////////*/
 
-.button {
+footer div {
     position: fixed;
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    padding: 20px 50px;
+    width: 300px;
+    padding: 20px 0px;
 
     font-family: 'Fraunces', serif;
     font-size: 1.5em;
     font-weight: 200;
     text-align: center;
     background-color: black;
-    border-radius: 20px;
+    border: 5px solid red;
+    border-radius: 40px;
 }
+
+#love-btn-container {
+    visibility: 0;
+    z-index: 1;
+}
+
+#advice-btn-container {
+    /* visibility: 0; */
+    z-index: 0;
+}
+
 
 #love-button, #advice-button {
     text-decoration: none;
