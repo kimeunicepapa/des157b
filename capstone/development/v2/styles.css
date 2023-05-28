@@ -64,7 +64,7 @@ main {
     width: 50%;
     padding-top: 200px;
     /* background-color: lightblue; */
-    filter: blur(1rem);
+    filter: blur(0.5rem);
     opacity: 0.3;
     transition: all 1s ease-in-out;
 }
@@ -230,19 +230,21 @@ footer div {
     font-size: 1.5em;
     font-weight: 200;
     text-align: center;
-    background-color: black;
     border: 5px solid red;
     border-radius: 40px;
 }
 
-#love-btn-container {
-    visibility: 0;
+.love-btn-container {
+    visibility: none;
+    opacity: 0;
     z-index: 1;
+    background-color: pink;
 }
 
-#advice-btn-container {
+.advice-btn-container {
     /* visibility: 0; */
     z-index: 0;
+    background-color: red;
 }
 
 
