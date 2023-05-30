@@ -13,7 +13,8 @@
     const adviceList = document.querySelector("#adviceContainer");
     const loveInputs = document.querySelectorAll("#love-form textarea");
     const adviceInputs = document.querySelectorAll("#advice-form textarea");
-
+    const leftSide = document.querySelector("#left");
+    const rightSide = document.querySelector("#right");
 
     /*////////////////// DISPLAY ENTRIES //////////////////*/
 
@@ -63,7 +64,13 @@
             <div class="flower"><img src="images/daisy.png" alt="daisy">
             <div class="love">
                 ${advicemsg}
-            </div></div>`
+            </div>
+            </div>
+            `
+            // <div class= "btn-container">
+            // <button class="btn"><img src="images/like.svg" alt="like button"></button>
+            // <button class="btn"><img src="images/dislike.svg" alt="dislike button"></button>
+            // </div>
 
             adviceList.append(adviceListItem);
         })
@@ -73,14 +80,19 @@
 
 
     /*////////////////// SUBMIT BUTTON INTERACTION //////////////////*/
-    // loveBtn.addEventListener("click", function(event){
-    //     event.preventDefault();
-    //     addLoveForm.className = "love-form-onscreen";
-    // })
-
-    adviceBtn.addEventListener("click", function(event){
+    leftSide.addEventListener("mouseover", function(event){
         event.preventDefault();
-        addAdviceForm.className = "advice-form-onscreen";
+        loveBtn.className = "love-btn-onscreen";
+    })
+
+    leftSide.addEventListener("mouseout", function(event){
+        event.preventDefault();
+        loveBtn.className = "love-btn-offscreen";
+    })
+    
+    loveBtn.addEventListener("click", function(event){
+        event.preventDefault();
+        addLoveForm.className = "love-form-onscreen";
     })
 
     addLoveForm.addEventListener("submit", function(event){
@@ -117,7 +129,20 @@
         }
     }
 
-    
+    rightSide.addEventListener("mouseover", function(event){
+        event.preventDefault();
+        adviceBtn.className = "advice-btn-onscreen";
+    })
+
+    rightSide.addEventListener("mouseout", function(event){
+        event.preventDefault();
+        adviceBtn.className = "advice-btn-offscreen";
+    })
+
+    adviceBtn.addEventListener("click", function(event){
+        event.preventDefault();
+        addAdviceForm.className = "advice-form-onscreen";
+    })
 
     addAdviceForm.addEventListener("submit", function(event){
         event.preventDefault();
