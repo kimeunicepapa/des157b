@@ -8,6 +8,7 @@
     const loveBtn = document.getElementById("love-button");
     const loveBtnDiv = document.querySelector("#love-button-div");
     const adviceBtn = document.getElementById("advice-button");
+    const adviceBtnDiv = document.querySelector("#advice-button-div");
     const addLoveForm = document.getElementById("love-form");
     const addAdviceForm = document.getElementById("advice-form");
     const loveList = document.querySelector("#loveContainer");
@@ -83,30 +84,73 @@
     /*////////////////// SUBMIT BUTTON INTERACTION //////////////////*/
     // leftSide.addEventListener("mouseover", removeBlurLeft, true);
 
-    leftSide.addEventListener("mouseenter", function(event){
+    leftSide.addEventListener("mouseover", function(event){
         event.preventDefault();
         console.log('enter');
         leftSide.className="no-blur";
         loveBtnDiv.className = "love-btn-onscreen";
 
-        loveBtnDiv.addEventListener('mouseleave', function(){
-            event.preventDefault();
-            loveBtnDiv.className = "love-btn-offscreen";
-        })
+        // loveBtnDiv.addEventListener('mouseleave', function(){
+        //     event.preventDefault();
+        //     loveBtnDiv.className = "love-btn-offscreen";
+        // })
     })
 
-    leftSide.addEventListener('mouseleave', function(event){
+    loveBtnDiv.addEventListener("mouseover", function(event){
+        event.preventDefault();
+        console.log('enter');
+        leftSide.className="no-blur";
+        loveBtnDiv.className = "love-btn-onscreen";
+    })
+
+
+    rightSide.addEventListener("mouseover", function(event){
+        event.preventDefault();
+        console.log('enter');
+        rightSide.className="no-blur";
+        adviceBtnDiv.className = "advice-btn-onscreen";
+
+        // leftSide.addEventListener('mouseleave', function(){
+        //     event.preventDefault();
+        //     adviceBtnDiv.className = "advice-btn-offscreen";
+        // })
+    })
+
+    adviceBtnDiv.addEventListener("mouseover", function(event){
+        event.preventDefault();
+        console.log('enter');
+        rightSide.className="no-blur";
+        adviceBtnDiv.className = "advice-btn-onscreen";
+
+        // leftSide.addEventListener('mouseleave', function(){
+        //     event.preventDefault();
+        //     adviceBtnDiv.className = "advice-btn-offscreen";
+        // })
+    })
+
+    leftSide.addEventListener("mouseout", function(event){
         event.preventDefault();
         leftSide.className="blur";
         loveBtnDiv.className = "love-btn-offscreen";
     })
 
-    // leftSide.addEventListener("mouseleave", function(event){
+    rightSide.addEventListener("mouseleave", function(event){
+        event.preventDefault();
+        rightSide.className="blur";
+        adviceBtnDiv.className = "advice-btn-offscreen";
+    })
+
+    // rightSide.addEventListener("mouseout", function(event){
     //     event.preventDefault();
-    //     loveBtnDiv.className = "love-btn-offscreen";
+    //     adviceBtn.className = "advice-btn-offscreen";
     // })
+
+    adviceBtnDiv.addEventListener("click", function(event){
+        event.preventDefault();
+        addAdviceForm.className = "advice-form-onscreen";
+    })
     
-    loveBtn.addEventListener("click", function(event){
+    loveBtnDiv.addEventListener("click", function(event){
         event.preventDefault();
         addLoveForm.className = "love-form-onscreen";
     })
@@ -145,20 +189,20 @@
         }
     }
 
-    rightSide.addEventListener("mouseover", function(event){
-        event.preventDefault();
-        adviceBtn.className = "advice-btn-onscreen";
-    })
+    // rightSide.addEventListener("mouseover", function(event){
+    //     event.preventDefault();
+    //     adviceBtn.className = "advice-btn-onscreen";
+    // })
 
-    rightSide.addEventListener("mouseout", function(event){
-        event.preventDefault();
-        adviceBtn.className = "advice-btn-offscreen";
-    })
+    // rightSide.addEventListener("mouseout", function(event){
+    //     event.preventDefault();
+    //     adviceBtn.className = "advice-btn-offscreen";
+    // })
 
-    adviceBtn.addEventListener("click", function(event){
-        event.preventDefault();
-        addAdviceForm.className = "advice-form-onscreen";
-    })
+    // adviceBtn.addEventListener("click", function(event){
+    //     event.preventDefault();
+    //     addAdviceForm.className = "advice-form-onscreen";
+    // })
 
     addAdviceForm.addEventListener("submit", function(event){
         event.preventDefault();

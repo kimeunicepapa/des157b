@@ -36,13 +36,8 @@ h1 {
 
 main {
     display: flex;
-
     padding: 0px 0px 100px 0px;
 }
-
-/* main div {
-    margin-top: 200px;
-} */
 
 #left {
     width: 50%;
@@ -51,11 +46,6 @@ main {
    
     /* opacity: 0.3;
     transition: all 1s ease-in-out; */
-}
-.blur{
-    filter: blur(10px);
-    opacity: 0.3;
-    transition: all 1s ease-in-out;
 }
 
 /* #left:hover {
@@ -73,23 +63,29 @@ main {
 #right {
     width: 50%;
     padding-top: 200px;
-    /* background-color: lightblue; */
+/* 
     filter: blur(0.5rem);
     opacity: 0.3;
-    transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; */
 }
 
-#right:hover {
+/* #right:hover {
     cursor: pointer;
     filter: blur(0rem);
     opacity: 1;
     transition: all 0.7s ease-in-out;
-}
+} */
 
 
 
 #advice-btn {
     visibility: hidden;
+}
+
+.blur{
+    filter: blur(10px);
+    opacity: 0.3;
+    transition: all 1s ease-in-out;
 }
 
 .no-blur {
@@ -242,60 +238,10 @@ input[type=submit]:hover {
 }
 
 /*////////////////// BUTTON STYLING //////////////////*/
-
-/* footer div {
+#love-button-div {
     position: fixed;
     top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    padding: 20px 0px;
-
-    font-family: 'Fraunces', serif;
-    font-size: 1.5em;
-    font-weight: 200;
-    text-align: center;
-    border: 5px solid red;
-    border-radius: 40px;
-} */
-
-.btn-container {
-    display: flex;
-}
-
-
-.love-btn-onscreen {
-    visibility: visible;
-    /* display: block; */
-
-    position: fixed;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    padding: 20px 0px;
-
-    font-family: 'Fraunces', serif;
-    font-size: 1.5em;
-    font-weight: 200;
-    text-align: center;
-    border: 5px solid #00402E;
-    border-radius: 40px;
-    background-color: pink;
-}
-
-.love-btn-offscreen {
-    visibility: hidden;
-    /* display: none; */
-}
-
-.advice-btn-onscreen {
-    visibility: visible;
-    
-
-    position: fixed;
-    top: 90%;
-    left: 65%;
+    left: 25%;
     transform: translate(-50%, -50%);
     width: 300px;
     padding: 20px 0px;
@@ -306,13 +252,45 @@ input[type=submit]:hover {
     text-align: center;
     border: 5px solid #E8AFBE;
     border-radius: 40px;
-    background-color: #BF3605;
+    background-color: #FFEC9C;
+}
+
+
+.love-btn-onscreen {
+    visibility: visible;
+}
+
+.love-btn-offscreen {
+    visibility: hidden;
+    /* display: none; */
+    transition: all 100ms ease-in-out;
+}
+
+#advice-button-div {
+    position: fixed;
+    top: 90%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px 0px;
+
+    font-family: 'Fraunces', serif;
+    font-size: 1.5em;
+    font-weight: 200;
+    text-align: center;
+    border: 5px solid #BF3605;
+    border-radius: 40px;
+    background-color: #FFEC9C;
+}
+
+.advice-btn-onscreen {
+    visibility: visible;
 }
 
 
 .advice-btn-offscreen {
     visibility: hidden;
-
+    transition: all 100ms ease-in-out;
 }
 
 
@@ -325,6 +303,6 @@ input[type=submit]:hover {
 }
 
 #advice-button {
-    color: white;
+    color: black;
 }
 

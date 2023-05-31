@@ -95,12 +95,6 @@
         })
     })
 
-    leftSide.addEventListener('mouseleave', function(event){
-        event.preventDefault();
-        leftSide.className="blur";
-        loveBtnDiv.className = "love-btn-offscreen";
-    })
-
     // leftSide.addEventListener("mouseleave", function(event){
     //     event.preventDefault();
     //     loveBtnDiv.className = "love-btn-offscreen";
