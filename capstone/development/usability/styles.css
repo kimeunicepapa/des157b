@@ -39,6 +39,7 @@ main {
     padding: 0px 0px 100px 0px;
 }
 
+
 #left {
     width: 50%;
     padding-top: 200px;
@@ -123,6 +124,7 @@ ol li {
     padding: 60px 30px;
     margin: 20px 0;
     list-style-type: none;
+    
 }
 
 li img{
@@ -305,4 +307,5 @@ input[type=submit]:hover {
 #advice-button {
     color: black;
 }
+
 
