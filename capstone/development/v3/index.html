@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone</title>
+    <!--/ /-------- Normalize CSS --------/ /-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    
+    <!--/ /-------- Font Awesome --------/ /-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <!--/ /-------- Google Fonts --------/ /-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&family=Marcellus&display=swap" rel="stylesheet">
+
+     <!--/ /-------- Load Parse Library --------/ /-->
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <h1>Dear Davis,</h1>
+    </header>
+    <main>
+        <section id="overlay" class="showing">
+            <article>
+                <h2>Welcome to my user test!</h2>
+                <p>Try to do these three tasks:</p>
+                <ul>
+                    <li>Write a love message for Davis</li>
+                    <li>Write an advice message for Davis</li>
+                    <li>Explore the page
+                    </li>
+                </ul>
+                <button class="close">close</button>
+            </article>
+        </section>
+        <div id="left" class="blur">
+            <section>
+                <h2>Love messages to appreciate the city</h2>
+                <ol id="loveContainer">
+                    <!-- <div data-aos="fade-up">
+                    <li>
+                        <h2>I love...</h2>
+                        <div class="love">
+                            LoveMessage
+                        </div>
+                    </li>
+                    </div> -->
+
+                    <!-- <button><img src="images/like.png" alt="like button"></button>
+                    <button><img src="images/dislike.png" alt="dislike button"></button> -->
+                </ol>
+
+            </section>
+            
+        </div>
+        <div class="love-btn-onscreen" id="love-button-div">
+                <a href="#" id="love-button">Submit a thought</a>
+        </div>
+        
+        <div id="right" class="blur">
+            <section>
+                <h2>Advice messages for a better city</h2>
+                <ol id="adviceContainer">
+                    <!-- <li>
+                        <h2>I wish...</h2>
+                        <div class="love">
+                            AdviceMessage
+                        </div>
+                    </li> -->
+
+                </ol>
+
+            </section>
+            
+            
+        </div>
+       <div class="advice-btn-offscreen" id="advice-button-div">
+                <a href="#" id="advice-button">Submit a thought</a>
+        </div>
+    </main>
+    
+    <form id="love-form" class="love-form-offscreen">
+        <h2>Dear Davis,</h2>
+
+        <label for="love">I love...</label>
+        <textarea id="lovemsg" name="lovemsg" rows="5" placeholder="the community"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <form id="advice-form" class="advice-form-offscreen">
+        <h2>Dear Davis,</h2>
+
+        <label for="advice">I wish...</label>
+        <textarea id="advicemsg" name="advicemsg" rows="5" placeholder="the traffic was better" ></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+    <footer>
+        <!-- <div class="love-btn-offscreen" id="love-button-div">
+            <a href="#" id="love-button">Submit a thought</a>
+        </div>
+        <div class="advice-btn-offscreen" id="advice-button-div">
+            <a href="#" id="advice-button">Submit a thought</a>
+        </div> -->
+        <p>Library used: Back4app</p>
+        <p><a href="https://docs.google.com/document/d/1FOvl6B14T8oM11uI_xXdrl3kg1w2OuSBSraA1RMh2u0/edit?usp=sharing">Progress Report</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
