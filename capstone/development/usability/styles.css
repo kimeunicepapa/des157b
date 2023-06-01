@@ -154,9 +154,8 @@ form {
     z-index: 3;
     padding: 20px;
 
-    background-color: lightpink;
     border-radius: 10px;
-    color: black;
+    
 }
 
 label,input {
@@ -185,7 +184,7 @@ textarea{
     border: 3px dotted purple;
     border-radius: 10px;
     resize: vertical;
-    background-color: lightgoldenrodyellow;
+    background-color: #fff7d5;
     outline: none;
 }
 
@@ -201,14 +200,22 @@ input[type=submit] {
 
     border: none;
     border-radius: 10px;
-    color: lightpink;
-    background-color: black;
     cursor: pointer;
 }
 
-input[type=submit]:hover {
-    background-color: white;
+#love-form {
+    background-color: #E8AFBE;
+    color: black;
+}
 
+#love-form input[type=submit]{
+    background-color: #fff7d5;
+    color: black;
+}
+
+#love-form input[type=submit]:hover {
+    color: #E8AFBE;
+    background-color: black;
 }
 
 .love-form-onscreen {
@@ -223,6 +230,22 @@ input[type=submit]:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 500ms ease-in-out; 
+}
+
+#advice-form {
+    background-color: #BF3605;
+    color: #fff7d5;
+}
+
+#advice-form input[type=submit] {
+    color: #BF3605;
+    background-color: #fff7d5;
+}
+
+#advice-form input[type=submit]:hover {
+    background-color: black;
+    color: #fff7d5;
+
 }
 
 .advice-form-onscreen {
