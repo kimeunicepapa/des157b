@@ -1,0 +1,47 @@
+body {
+    font-family: 'Archivo', sans-serif;
+    background-color: rgb(242, 255, 230);
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    /* display: flex; */
+
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 5em;
+    margin-bottom: 0.2em;
+
+}
+
+h2 {
+    min-width: 250px;
+    padding-right: 20px;
+
+    color: darkolivegreen;
+}
+
+p {
+    line-height: 1.3em;
+}
+
+li {
+    line-height: 1.3em;
+}
+
+cite {
+    text-indent: 50px;
+}
+
+#container {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100vh; */
+}
