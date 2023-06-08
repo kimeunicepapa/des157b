@@ -246,7 +246,7 @@
     // function removeBlurLeft() {
     //     leftSide.className = "no-blur";
     // }
-    document.querySelector('.close').addEventListener('click', function(event) {
+    document.querySelector('#overlay').addEventListener('click', function(event) {
         event.preventDefault();
         document.getElementById('overlay').className = 'hidden';
     });

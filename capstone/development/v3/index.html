@@ -29,15 +29,9 @@
     <main>
         <section id="overlay" class="showing">
             <article>
-                <h2>Welcome to my user test!</h2>
-                <p>Try to do these three tasks:</p>
-                <ul>
-                    <li>Write a love message for Davis</li>
-                    <li>Write an advice message for Davis</li>
-                    <li>Explore the page
-                    </li>
-                </ul>
-                <button class="close">close</button>
+                <h2>Dear Davis,</h2>
+                <p>The anonymous platform to share your thoughts about Davis</p>
+                <p id="instructions">Click to start</p>
             </article>
         </section>
         <div id="left" class="blur">
@@ -91,7 +85,7 @@
 
         <label for="love">I love...</label>
         <textarea id="lovemsg" name="lovemsg" rows="5" placeholder="the community"></textarea>
-
+        <p>Don't worry! All entries are anonymous</p>
         <input type="submit" value="Submit">
     </form>
 
@@ -100,7 +94,9 @@
 
         <label for="advice">I wish...</label>
         <textarea id="advicemsg" name="advicemsg" rows="5" placeholder="the traffic was better" ></textarea>
-
+        <p>Don't worry! All entries are anonymous</p>
+        <p>Do you want to report to the city? <a href="https://www.cityofdavis.org/how-do-i/make-a-service-request">Click here
+        </a></p>
         <input type="submit" value="Submit">
     </form>
     
@@ -111,8 +107,12 @@
         <div class="advice-btn-offscreen" id="advice-button-div">
             <a href="#" id="advice-button">Submit a thought</a>
         </div> -->
-        <p>Library used: Back4app</p>
-        <p><a href="https://docs.google.com/document/d/1FOvl6B14T8oM11uI_xXdrl3kg1w2OuSBSraA1RMh2u0/edit?usp=sharing">Progress Report</a></p>
+        <h2>Dear Davis,</h2>
+        <div id="end">
+        <p>A digital platform where people can anonymously share thoughts they have about Davis — whether it’s a suggestion for improvement, a complaint, or a message of appreciation. A visualization of what people think about Davis to highlight concerns and love for the city and hopefully, help build a stronger community.
+        </p>
+        <p>Project by Kim Eunice Papa</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
