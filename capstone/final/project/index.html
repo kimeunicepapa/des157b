@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone</title>
+    <!--/ /-------- Normalize CSS --------/ /-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    
+    <!--/ /-------- Font Awesome --------/ /-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <!--/ /-------- Google Fonts --------/ /-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&family=Marcellus&display=swap" rel="stylesheet">
+
+     <!--/ /-------- Load Parse Library --------/ /-->
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <h1>Dear Davis,</h1>
+    </header>
+    <main>
+        <section id="overlay" class="showing">
+            <article>
+                <h2>Dear Davis,</h2>
+                <p>The anonymous platform to share your thoughts about Davis</p>
+                <p id="instructions">Click to start</p>
+            </article>
+        </section>
+        <div id="left" class="blur">
+            <section>
+                <h2>Love messages to appreciate the city</h2>
+                <ol id="loveContainer">
+                    <!-- <div data-aos="fade-up">
+                    <li>
+                        <h2>I love...</h2>
+                        <div class="love">
+                            LoveMessage
+                        </div>
+                    </li>
+                    </div> -->
+
+                    <!-- <button><img src="images/like.png" alt="like button"></button>
+                    <button><img src="images/dislike.png" alt="dislike button"></button> -->
+                </ol>
+
+            </section>
+            
+        </div>
+        <div class="love-btn-offscreen" id="love-button-div">
+                <a href="#" id="love-button">Submit a thought</a>
+        </div>
+        
+        <div id="right" class="blur">
+            <section>
+                <h2>Advice messages for a better city</h2>
+                <ol id="adviceContainer">
+                    <!-- <li>
+                        <h2>I wish...</h2>
+                        <div class="love">
+                            AdviceMessage
+                        </div>
+                    </li> -->
+
+                </ol>
+
+            </section>
+            
+            
+        </div>
+       <div class="advice-btn-offscreen" id="advice-button-div">
+                <a href="#" id="advice-button">Submit a thought</a>
+        </div>
+    </main>
+    
+    <form id="love-form" class="love-form-offscreen">
+        <h2>Dear Davis,</h2>
+
+        <label for="love">I love...</label>
+        <textarea id="lovemsg" name="lovemsg" rows="5" placeholder="the community"></textarea>
+        <p>Don't worry! All entries are anonymous</p>
+        <input type="submit" value="Submit">
+    </form>
+
+    <form id="advice-form" class="advice-form-offscreen">
+        <h2>Dear Davis,</h2>
+
+        <label for="advice">I wish...</label>
+        <textarea id="advicemsg" name="advicemsg" rows="5" placeholder="the traffic was better" ></textarea>
+        <p>Don't worry! All entries are anonymous</p>
+        <p>Do you want to report to the city? <a href="https://www.cityofdavis.org/how-do-i/make-a-service-request">Click here
+        </a></p>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <footer>
+        <!-- <div class="love-btn-offscreen" id="love-button-div">
+            <a href="#" id="love-button">Submit a thought</a>
+        </div>
+        <div class="advice-btn-offscreen" id="advice-button-div">
+            <a href="#" id="advice-button">Submit a thought</a>
+        </div> -->
+        <h2>Dear Davis,</h2>
+        <div id="end">
+        <p>A digital platform where people can anonymously share thoughts they have about Davis — whether it’s a suggestion for improvement, a complaint, or a message of appreciation. A visualization of what people think about Davis to highlight concerns and love for the city and hopefully, help build a stronger community.
+        </p>
+        <p>Project by Kim Eunice Papa</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
