@@ -16,12 +16,23 @@ html {
 
 body {
     font-family: "Marcellus", sans-serif;
-    color: #333;
+    color: #00402E;
     background-color: #aed2c7;
 }
 
 h1, h2 {
     font-family: 'Fraunces', serif;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 8em;
+    margin: 0.2em 0 0 0;
+}
+
+h2 {
+    margin-top: 1em;
+    margin-bottom: 0.8em;
 }
 
 nav {
@@ -31,12 +42,17 @@ nav {
 nav ul li a {
     text-decoration: none;
     display: block;
-    color:cornflowerblue;
+    color:#00402E;
     font-weight: bold;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #00402E;
     text-align: center;
     padding: 10px;
+    text-transform: uppercase;
+}
 
+nav ul li a:hover {
+    cursor: pointer;
+    background-color: #E8AFBE;
 }
 
 header, footer {
@@ -48,6 +64,14 @@ header, section, footer {
     padding: 20px;
 }
 
+header h2 {
+    color: #E8AFBE;
+}
+
+section {
+    padding: 50px;
+}
+
 section:nth-child(even){
     background-color: #00402E;
     color: #fff7d5;
@@ -55,10 +79,6 @@ section:nth-child(even){
 
 .container {
     max-width: 1000px;
-}
-
-h1, h2 {
-    margin-bottom: .5em;
 }
 
 p {
