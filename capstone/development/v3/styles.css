@@ -99,17 +99,7 @@ footer {
     background-color: #00402E;
     color: #fff7d5;
 }
-footer #end {
-    display: flex;
-    column-gap: 2em;
-}
 
-footer p {
-    width: 50%;
-    margin: 0;
-    padding: 5px 0;
-    font-size: 1.1em;
-}
 
 
 
