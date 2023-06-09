@@ -141,19 +141,26 @@ ol li {
 }
 
 li img{
+    max-width: 100%;
+  height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
+ 
 }
 
 .love {
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 0 40px;
+    padding: 0 40px 40px 40px;
     bottom: 0;
     font-size: 1.5em;
+}
+
+.love h2 {
+    margin: 0;
 }
 
 
