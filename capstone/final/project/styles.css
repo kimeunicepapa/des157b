@@ -397,6 +397,10 @@ input[type=submit] {
     color: #fff7d5;
 }
 
+#overlay:hover {
+    cursor: pointer;
+}
+
 #overlay article {
     padding: 50px;
     width: 70vw;
