@@ -11,6 +11,8 @@
     const adviceBtnDiv = document.querySelector("#advice-button-div");
     const addLoveForm = document.getElementById("love-form");
     const addAdviceForm = document.getElementById("advice-form");
+    const exitLoveBtn = document.querySelector("#exitLove");
+    const exitAdviceBtn = document.querySelector("#exitAdvice");
     const loveList = document.querySelector("#loveContainer");
     const adviceList = document.querySelector("#adviceContainer");
     const loveInputs = document.querySelectorAll("#love-form textarea");
@@ -35,11 +37,17 @@
             const loveListItem = document.createElement("li");
             loveListItem.setAttribute("id", `r-${id}`);
             loveListItem.innerHTML = `
-            <h2>I love...</h2>
-            <div class="flower"><img src="images/pink-flower.png" alt="daisy">
-            <div class="love">
-                ${lmsg}
-            </div></div>`
+            
+            <div class="flower">
+            <img src="images/pink-flower.png" alt="daisy">
+                <div class="loveText">
+                    <h2>I love...</h2>
+                    <div class="love">
+                        
+                        ${lmsg}
+                    </div>
+                </div>
+            </div>`
 
             loveList.append(loveListItem);
         })
@@ -62,11 +70,15 @@
             const adviceListItem = document.createElement("li");
             adviceListItem.setAttribute("id", `r-${id}`);
             adviceListItem.innerHTML = `
-            <h2>I wish...</h2>
-            <div class="flower"><img src="images/red-flower.png" alt="daisy">
-            <div class="love">
-                ${advicemsg}
-            </div>
+            
+            <div class="flower">
+           <img src="images/red-flower.png" alt="daisy">
+                <div class="loveText">
+                    <h2>I wish...</h2>
+                    <div class="love">
+                        ${advicemsg}
+                    </div>
+                </div>
             </div>
             `
             // <div class= "btn-container">
@@ -209,6 +221,16 @@
         // addAdviceForm.className = "advice-form-offscreen";
         addAdvice()
     })
+    
+    exitLoveBtn.addEventListener("click", function(event){
+        event.preventDefault();
+        addLoveForm.className = "love-form-offscreen";
+    })
+
+    exitAdviceBtn.addEventListener("click", function(event){
+        event.preventDefault();
+        addAdviceForm.className = "advice-form-offscreen";
+    })
 
     async function addAdvice() {
         const newAdvice = {};
@@ -237,6 +259,7 @@
             addAdviceForm.className = "advice-form-offscreen";
         }
     }
+
 
     function resetFormFields(){
         document.getElementById("lovemsg").value = "";

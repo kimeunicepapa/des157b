@@ -120,17 +120,17 @@ footer p {
 ol {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 80px;
+    row-gap: 0px;
 
     text-decoration: none;
     list-style-type:none;
 }
 
 ol li {
-    min-height: 265px;
+    min-height: 260px;
     position: relative;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
     z-index: 1;
     text-align: center;
 
@@ -138,6 +138,12 @@ ol li {
     margin: 20px 0;
     list-style-type: none;
     
+}
+
+li h2 {
+    margin: 0;
+    /* padding-top: 20px; */
+    font-size: 1.5em;
 }
 
 li img{
@@ -154,14 +160,23 @@ li img{
 .love {
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 0 40px 40px 40px;
+    /* margin: 10px 50px 0px 50px; */
     bottom: 0;
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
-.love h2 {
-    margin: 0;
+.loveText{
+    max-width: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+.flower {
+    padding: 50px;
+}
+
 
 
 
@@ -176,6 +191,10 @@ form {
 
     border-radius: 10px;
     
+}
+
+form h2 {
+    margin-top: 10px;
 }
 
 label,input {
@@ -302,6 +321,31 @@ input[type=submit] {
     transition: all 500ms ease-in-out; 
 }
 
+#exitLove {
+    width: 2em;
+    position: absolute;
+    right: 20px;
+}
+
+#exitLove:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: rotate(180deg);
+}
+
+#exitAdvice {
+    width: 2em;
+    position: absolute;
+    right: 20px;
+}
+
+#exitAdvice:hover {
+    cursor: pointer;
+    transition: all 1s;
+    transform: rotate(180deg);
+}
+
+
 /*////////////////// BUTTON STYLING //////////////////*/
 #love-button-div {
     position: fixed;
@@ -381,7 +425,7 @@ input[type=submit] {
     color: black;
 }
 
-/* TEST STYLING */
+/* INTRO STYLING */
 
 #overlay {
     position: absolute;
