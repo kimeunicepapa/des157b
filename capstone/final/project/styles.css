@@ -3,9 +3,7 @@
 }
 
 body {
-
     font-family: "Marcellus", sans-serif;
-    /* background-color: rgb(184, 227, 184); */
     background-image: url(images/green.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,99 +27,60 @@ h1 {
 
     font-weight: 800;
     font-style: italic;
-    font-size: 7em;
     color: #00402E;
+
+    font-size: 3em;
 }
 
-main {
-    display: flex;
-    padding: 0px 0px 100px 0px;
+h2 {
+    font-weight: 500;
 }
 
+section {
+    padding: 0 20px;
+}
 
 #left {
-    width: 50%;
-    padding-top: 200px;
-    
-    /* background-color: lightblue; */
-   
-    /* opacity: 0.3;
-    transition: all 1s ease-in-out; */
+    position: relative;
+    z-index: 1;
+    padding-top: 70px;
 }
-
-/* #left:hover {
-    cursor: pointer;
-    filter: blur(0rem);
-    opacity: 1;
-    transition: all 0.7s ease-in-out;
-} */
-
-/* main:hover #right{
-    opacity: .2;
-    background-color: red;
-} */
 
 #right {
-    width: 50%;
+    position: absolute;
+    z-index: -2;
+    visibility: hidden;
     padding-top: 200px;
-/* 
-    filter: blur(0.5rem);
-    opacity: 0.3;
-    transition: all 1s ease-in-out; */
 }
-
 
 #advice-btn {
     visibility: hidden;
 }
 
-.blur{
-    filter: blur(10px);
-    opacity: 0.3;
-    transition: all 700ms ease-in-out;
-}
-
-.no-blur {
-    filter: blur(0rem);
-    opacity: 1;
-    transition: all 700ms ease-in-out;
-}
-section {
-    padding: 0 20px;
-}
-
 footer {
-    width: 100%;
-    position: absolute;
-    z-index: 6;
+    margin: 0;
 
-    padding: 50px;
+    padding: 30px;
     background-color: #00402E;
     color: #fff7d5;
 }
-footer #end {
-    display: flex;
-    column-gap: 2em;
+
+footer h2 {
+    margin-bottom: 5px;
 }
 
 footer p {
-    width: 50%;
     margin: 0;
     padding: 5px 0;
     font-size: 1.1em;
 }
 
 
-
-
-
 /*////////////////// ENTRIES STYLING //////////////////*/
 
 ol {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 0px;
-
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     list-style-type:none;
 }
@@ -184,13 +143,12 @@ li img{
 
 form {
     position: fixed;
-    width: 40%;
+    width: 90%;
     margin: auto;
     z-index: 3;
     padding: 20px;
 
     border-radius: 10px;
-    
 }
 
 form h2 {
@@ -350,7 +308,8 @@ input[type=submit] {
 #love-button-div {
     position: fixed;
     top: 90%;
-    left: 25%;
+    left: 50%;
+    z-index: 4;
     transform: translate(-50%, -50%);
     width: 300px;
     padding: 20px 0px;
@@ -428,11 +387,11 @@ input[type=submit] {
 /* INTRO STYLING */
 
 #overlay {
-    position: absolute;
+    position: fixed;
     background-color: #00402E;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 6;
     height: 100vh;
     width: 100vw;
     transition-property: opacity, visibility;
@@ -446,7 +405,6 @@ input[type=submit] {
 }
 
 #overlay article {
-    padding: 50px;
     width: 70vw;
 
     position: absolute;
@@ -456,22 +414,24 @@ input[type=submit] {
 }
 
 #overlay h2 {
-    margin-top: 50px;
     margin-bottom: 0;
-    font-size: 7em;
+    
     font-weight: 800;
     font-style: italic;
+    
+    font-size: 3em;
 }
 
 #overlay p {
     margin-top: 20px;
-    font-family: 'Fraunces', serif;
     margin-bottom: 0;
-    font-size: 3em;
+    font-family: 'Fraunces', serif;
+
+    font-size: 1.5em;
 }
 
 #overlay article #instructions {
-    margin-top: 100px;
+    margin-top: 50px;
     font-family: "Marcellus", sans-serif;
     text-transform: uppercase;
     font-size: 1.5em;
@@ -482,7 +442,6 @@ input[type=submit] {
 .hidden {
     visibility: hidden;
     opacity: 0;
-
 }
 
 .showing {
@@ -505,6 +464,92 @@ input[type=submit] {
 
 .close:hover {
     cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+
+    main {
+        display: flex;
+    }
+
+
+    h1 {
+        font-size: 7em;
+    }
+
+
+    ol {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0px;
+    }
+
+    #left {
+        padding-top: 200px;
+        width: 50%;
+    }
+
+    #right {
+        width: 50%;
+    }
+
+    .blur{
+        filter: blur(10px);
+        opacity: 0.3;
+        transition: all 700ms ease-in-out;
+    }
+    
+    .no-blur {
+        filter: blur(0rem);
+        opacity: 1;
+        transition: all 700ms ease-in-out;
+    }
+
+    footer {
+        padding: 50px;
+        position: absolute;
+        z-index: 4;
+    }
+
+    footer #end {
+        display: flex;
+        column-gap: 2em;
+    }
+
+    footer p {
+        width: 50%;
+    }
+
+    /*////////////////// FORM STYLING //////////////////*/
+
+    form {
+        width: 40%;
+    }
+
+    /*////////////////// BUTTON STYLING //////////////////*/
+
+    #love-button-div {
+        left: 25%;
+    }
+
+    /*////////////////// INTRO //////////////////*/
+
+    #overlay article {
+        padding: 50px;
+    }
+    
+    #overlay h2 {
+        margin-top: 50px;
+        font-size: 7em;
+    }
+
+    #overlay p {
+        font-size: 3em;
+    }
+
+    #overlay article #instructions {
+        margin-top: 100px;
+    }
 }
 
 
