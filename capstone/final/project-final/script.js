@@ -100,7 +100,7 @@
         event.preventDefault();
         console.log('enter');
         leftSide.className="no-blur";
-        loveBtnDiv.className = "love-btn-onscreen";
+        // loveBtnDiv.className = "love-btn-onscreen";
 
         // loveBtnDiv.addEventListener('mouseleave', function(){
         //     event.preventDefault();
@@ -108,19 +108,19 @@
         // })
     })
 
-    loveBtnDiv.addEventListener("mouseover", function(event){
-        event.preventDefault();
-        console.log('enter');
-        leftSide.className="no-blur";
-        loveBtnDiv.className = "love-btn-onscreen";
-    })
+    // loveBtnDiv.addEventListener("mouseover", function(event){
+    //     event.preventDefault();
+    //     console.log('enter');
+    //     leftSide.className="no-blur";
+    //     loveBtnDiv.className = "love-btn-onscreen";
+    // })
 
 
     rightSide.addEventListener("mouseover", function(event){
         event.preventDefault();
         console.log('enter');
         rightSide.className="no-blur";
-        adviceBtnDiv.className = "advice-btn-onscreen";
+        // adviceBtnDiv.className = "advice-btn-onscreen";
 
         // leftSide.addEventListener('mouseleave', function(){
         //     event.preventDefault();
@@ -128,43 +128,43 @@
         // })
     })
 
-    adviceBtnDiv.addEventListener("mouseover", function(event){
-        event.preventDefault();
-        console.log('enter');
-        rightSide.className="no-blur";
-        adviceBtnDiv.className = "advice-btn-onscreen";
+    // adviceBtnDiv.addEventListener("mouseover", function(event){
+    //     event.preventDefault();
+    //     console.log('enter');
+    //     rightSide.className="no-blur";
+    //     adviceBtnDiv.className = "advice-btn-onscreen";
 
-        // leftSide.addEventListener('mouseleave', function(){
-        //     event.preventDefault();
-        //     adviceBtnDiv.className = "advice-btn-offscreen";
-        // })
-    })
+    //     // leftSide.addEventListener('mouseleave', function(){
+    //     //     event.preventDefault();
+    //     //     adviceBtnDiv.className = "advice-btn-offscreen";
+    //     // })
+    // })
 
     leftSide.addEventListener("mouseout", function(event){
         event.preventDefault();
         leftSide.className="blur";
-        loveBtnDiv.className = "love-btn-offscreen";
+        // loveBtnDiv.className = "love-btn-offscreen";
     })
 
     rightSide.addEventListener("mouseleave", function(event){
         event.preventDefault();
         rightSide.className="blur";
-        adviceBtnDiv.className = "advice-btn-offscreen";
+        // adviceBtnDiv.className = "advice-btn-offscreen";
     })
 
     rightSide.addEventListener("mouseout", function(event){
         event.preventDefault();
-        adviceBtn.className = "advice-btn-offscreen";
+        // adviceBtn.className = "advice-btn-offscreen";
     })
 
     adviceBtnDiv.addEventListener("click", function(event){
         event.preventDefault();
-        addAdviceForm.className = "advice-form-onscreen";
+        // addAdviceForm.className = "advice-form-onscreen";
     })
     
     loveBtnDiv.addEventListener("click", function(event){
         event.preventDefault();
-        addLoveForm.className = "love-form-onscreen";
+        // addLoveForm.className = "love-form-onscreen";
     })
 
     addLoveForm.addEventListener("submit", function(event){
