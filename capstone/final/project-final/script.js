@@ -140,22 +140,22 @@
         // })
     })
 
-    // leftSide.addEventListener("mouseout", function(event){
-    //     event.preventDefault();
-    //     leftSide.className="blur";
-    //     loveBtnDiv.className = "love-btn-offscreen";
-    // })
+    leftSide.addEventListener("mouseout", function(event){
+        event.preventDefault();
+        leftSide.className="blur";
+        loveBtnDiv.className = "love-btn-offscreen";
+    })
 
-    // rightSide.addEventListener("mouseleave", function(event){
-    //     event.preventDefault();
-    //     rightSide.className="blur";
-    //     adviceBtnDiv.className = "advice-btn-offscreen";
-    // })
+    rightSide.addEventListener("mouseleave", function(event){
+        event.preventDefault();
+        rightSide.className="blur";
+        adviceBtnDiv.className = "advice-btn-offscreen";
+    })
 
-    // rightSide.addEventListener("mouseout", function(event){
-    //     event.preventDefault();
-    //     adviceBtn.className = "advice-btn-offscreen";
-    // })
+    rightSide.addEventListener("mouseout", function(event){
+        event.preventDefault();
+        adviceBtn.className = "advice-btn-offscreen";
+    })
 
     adviceBtnDiv.addEventListener("click", function(event){
         event.preventDefault();
@@ -201,20 +201,20 @@
         }
     }
 
-    // rightSide.addEventListener("mouseover", function(event){
-    //     event.preventDefault();
-    //     adviceBtn.className = "advice-btn-onscreen";
-    // })
+    rightSide.addEventListener("mouseover", function(event){
+        event.preventDefault();
+        adviceBtn.className = "advice-btn-onscreen";
+    })
 
-    // rightSide.addEventListener("mouseout", function(event){
-    //     event.preventDefault();
-    //     adviceBtn.className = "advice-btn-offscreen";
-    // })
+    rightSide.addEventListener("mouseout", function(event){
+        event.preventDefault();
+        adviceBtn.className = "advice-btn-offscreen";
+    })
 
-    // adviceBtn.addEventListener("click", function(event){
-    //     event.preventDefault();
-    //     addAdviceForm.className = "advice-form-onscreen";
-    // })
+    adviceBtn.addEventListener("click", function(event){
+        event.preventDefault();
+        addAdviceForm.className = "advice-form-onscreen";
+    })
 
     addAdviceForm.addEventListener("submit", function(event){
         event.preventDefault();
@@ -292,4 +292,20 @@
             document.getElementById('overlay').className = 'hidden';
         }
     })
+
+    /*////////////////// RESPONSIVE //////////////////*/
+
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            document.getElementById('left').classList.remove("blur");
+            document.getElementById('right').classList.remove("blur");
+        } else {
+          document.getElementById('left').classList.remove("show-section","hide-section");
+          document.getElementById('right').classList.remove("show-section","hide-section");
+        }
+      }
+      
+      var x = window.matchMedia("(max-width: 600px)")
+      myFunction(x) // Call listener function at run time
+      x.addListener(myFunction) // Attach listener function on state changes
 })();
