@@ -94,7 +94,7 @@
 
 
     /*////////////////// SUBMIT BUTTON INTERACTION //////////////////*/
-
+    // leftSide.addEventListener("mouseover", removeBlurLeft, true);
 
     leftSide.addEventListener("mouseover", function(event){
         event.preventDefault();

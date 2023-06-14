@@ -17,10 +17,6 @@ header {
     padding: 20px;
 }
 
-main {
-    display: flex;
-}
-
 h1, h2 {
     font-family: 'Fraunces', serif;
 }
@@ -33,7 +29,7 @@ h1 {
     font-style: italic;
     color: #00402E;
 
-    font-size: 7em;
+    font-size: 3em;
 }
 
 h2 {
@@ -47,26 +43,14 @@ section {
 #left {
     position: relative;
     z-index: 1;
-    padding-top: 150px;
-    width: 50%;
+    padding-top: 70px;
 }
 
 #right {
-    width: 50%;
-    z-index: 1;
-    padding-top: 150px;
-}
-
-.blur{
-    filter: blur(10px);
-    opacity: 0.3;
-    transition: all 700ms ease-in-out;
-}
-
-.no-blur {
-    filter: blur(0rem);
-    opacity: 1;
-    transition: all 700ms ease-in-out;
+    position: absolute;
+    z-index: -2;
+    visibility: hidden;
+    padding-top: 200px;
 }
 
 #advice-btn {
@@ -74,18 +58,11 @@ section {
 }
 
 footer {
-    position: absolute;
     margin: 0;
-    z-index: 4;
 
-    padding: 50px;
+    padding: 30px;
     background-color: #00402E;
     color: #fff7d5;
-}
-
-footer #end {
-    display: flex;
-    column-gap: 2em;
 }
 
 footer h2 {
@@ -93,19 +70,15 @@ footer h2 {
 }
 
 footer p {
-    width: 50%;
     margin: 0;
     padding: 5px 0;
     font-size: 1.1em;
 }
 
+
 /*////////////////// ENTRIES STYLING //////////////////*/
 
 ol {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 0px;
-
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -170,7 +143,7 @@ li img{
 
 form {
     position: fixed;
-    width: 40%;
+    width: 90%;
     margin: auto;
     z-index: 3;
     padding: 20px;
@@ -335,8 +308,8 @@ input[type=submit] {
 #love-button-div {
     position: fixed;
     top: 90%;
-    left: 25%;
-    z-index: 2;
+    left: 50%;
+    z-index: 4;
     transform: translate(-50%, -50%);
     width: 300px;
     padding: 20px 0px;
@@ -359,7 +332,7 @@ input[type=submit] {
 }
 
 .love-btn-offscreen {
-    /* visibility: hidden; */
+    visibility: hidden;
     /* display: none; */
     filter: blur(10px);
     opacity: 0.3;
@@ -368,7 +341,6 @@ input[type=submit] {
 
 #advice-button-div {
     position: fixed;
-    z-index: 2;
     top: 90%;
     left: 75%;
     transform: translate(-50%, -50%);
@@ -433,7 +405,6 @@ input[type=submit] {
 }
 
 #overlay article {
-    padding: 50px;
     width: 70vw;
 
     position: absolute;
@@ -444,12 +415,11 @@ input[type=submit] {
 
 #overlay h2 {
     margin-bottom: 0;
-    margin-top: 50px;
-    font-size: 7em;
     
     font-weight: 800;
     font-style: italic;
     
+    font-size: 3em;
 }
 
 #overlay p {
@@ -457,12 +427,11 @@ input[type=submit] {
     margin-bottom: 0;
     font-family: 'Fraunces', serif;
 
-    font-size: 3em;
-
+    font-size: 1.5em;
 }
 
 #overlay article #instructions {
-    margin-top: 100px;
+    margin-top: 50px;
     font-family: "Marcellus", sans-serif;
     text-transform: uppercase;
     font-size: 1.5em;
@@ -497,5 +466,90 @@ input[type=submit] {
     cursor: pointer;
 }
 
+@media only screen and (min-width: 600px) {
+
+    main {
+        display: flex;
+    }
+
+
+    h1 {
+        font-size: 7em;
+    }
+
+
+    ol {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0px;
+    }
+
+    #left {
+        padding-top: 200px;
+        width: 50%;
+    }
+
+    #right {
+        width: 50%;
+    }
+
+    .blur{
+        filter: blur(10px);
+        opacity: 0.3;
+        transition: all 700ms ease-in-out;
+    }
+    
+    .no-blur {
+        filter: blur(0rem);
+        opacity: 1;
+        transition: all 700ms ease-in-out;
+    }
+
+    footer {
+        padding: 50px;
+        position: absolute;
+        z-index: 4;
+    }
+
+    footer #end {
+        display: flex;
+        column-gap: 2em;
+    }
+
+    footer p {
+        width: 50%;
+    }
+
+    /*////////////////// FORM STYLING //////////////////*/
+
+    form {
+        width: 40%;
+    }
+
+    /*////////////////// BUTTON STYLING //////////////////*/
+
+    #love-button-div {
+        left: 25%;
+    }
+
+    /*////////////////// INTRO //////////////////*/
+
+    #overlay article {
+        padding: 50px;
+    }
+    
+    #overlay h2 {
+        margin-top: 50px;
+        font-size: 7em;
+    }
+
+    #overlay p {
+        font-size: 3em;
+    }
+
+    #overlay article #instructions {
+        margin-top: 100px;
+    }
+}
 
 
