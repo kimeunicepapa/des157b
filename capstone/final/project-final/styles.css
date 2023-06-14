@@ -12,9 +12,9 @@ body {
 
 header {
     position: fixed;
-    width: 100%;
+    
     z-index: 4;
-    padding: 20px;
+    padding: 20px 10px;
 }
 
 h1, h2 {
@@ -29,35 +29,57 @@ h1 {
     font-style: italic;
     color: #00402E;
 
-    font-size: 3em;
+    font-size: 2em;
 }
 
 h2 {
     font-weight: 500;
+    margin: 0;
 }
 
-section {
-    padding: 0 20px;
+img {
+    display: block;
+}
+
+/*////////////////// SECTIONS STYLING //////////////////*/
+
+main {
+    position: relative;
+
+    /* overflow: hidden; */
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 70px 10px 50px 10px;
 }
 
 #left {
-    position: relative;
     z-index: 1;
-    padding-top: 70px;
 }
 
 #right {
-    position: absolute;
-    z-index: -2;
-    visibility: hidden;
-    padding-top: 200px;
+    z-index: 0;
 }
 
-#advice-btn {
-    visibility: hidden;
+section h2 {
+    font-family: "Marcellus", sans-serif;
+    font-weight: 800;
+    font-size: 1.3em;
 }
+
+.hide-section {
+    display: none;
+}
+
+.show-section {
+    display: block;
+}
+
+/*////////////////// FOOTER STYLING //////////////////*/
 
 footer {
+    position: relative;
+    z-index: 2;
     margin: 0;
 
     padding: 30px;
@@ -72,9 +94,8 @@ footer h2 {
 footer p {
     margin: 0;
     padding: 5px 0;
-    font-size: 1.1em;
+    font-size: 1em;
 }
-
 
 /*////////////////// ENTRIES STYLING //////////////////*/
 
@@ -136,19 +157,15 @@ li img{
     padding: 50px;
 }
 
-
-
-
 /*////////////////// FORM STYLING //////////////////*/
 
 form {
     position: fixed;
-    width: 90%;
+    width: 100vw;
+    height: 100vh;
     margin: auto;
-    z-index: 3;
+    z-index: 4;
     padding: 20px;
-
-    border-radius: 10px;
 }
 
 form h2 {
@@ -221,14 +238,14 @@ input[type=submit] {
 }
 
 .love-form-onscreen {
-    bottom: 5%;
+    bottom: -50%;
     left: 50%;
     transform: translate(-50%, -50%);  
     transition: all 500ms ease-in-out;
 }
 
 .love-form-offscreen {
-    bottom: -70%;
+    bottom: -150%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 500ms ease-in-out; 
@@ -262,18 +279,17 @@ input[type=submit] {
 #advice-form input[type=submit]:hover {
     background-color: black;
     color: #fff7d5;
-
 }
 
 .advice-form-onscreen {
-    bottom: 5%;
+    bottom: -50%;
     left: 50%;
     transform: translate(-50%, -50%);  
     transition: all 500ms ease-in-out;
 }
 
 .advice-form-offscreen {
-    bottom: -80%;
+    bottom: -150%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 500ms ease-in-out; 
@@ -305,24 +321,53 @@ input[type=submit] {
 
 
 /*////////////////// BUTTON STYLING //////////////////*/
-#love-button-div {
+#love-btn-container, #advice-btn-container {
+    width: 100%;
     position: fixed;
-    top: 90%;
-    left: 50%;
-    z-index: 4;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    padding: 20px 0px;
+    display: flex;
 
-    font-family: 'Fraunces', serif;
-    font-size: 1.5em;
-    font-weight: 200;
-    text-align: center;
-    border: 5px solid #E8AFBE;
-    border-radius: 40px;
-    background-color: #FFEC9C;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    font-family: "Marcellus", sans-serif;
+    text-transform: uppercase;
 }
 
+#love-btn-container div {
+    padding: 8px 16px; 
+    font-size: 1em;
+    text-align: center;
+    border-radius: 40px;
+    border: 3px solid #00402E;
+}
+
+#love-button-div {
+    background-color: #E8AFBE;
+}
+
+#love-button, #advice-button, #to-advice, #to-love {
+    text-decoration: none;
+}
+
+#love-button {
+    color: #00402E;
+    font-weight: bolder;
+}
+
+#to-advice-div {
+    background-color: #BF3605;
+}
+
+#to-advice {
+    color: #FFEC9C;
+}
 
 .love-btn-onscreen {
     visibility: visible;
@@ -333,27 +378,35 @@ input[type=submit] {
 
 .love-btn-offscreen {
     visibility: hidden;
-    /* display: none; */
     filter: blur(10px);
     opacity: 0.3;
     transition: all 500ms ease-in-out;
 }
 
-#advice-button-div {
-    position: fixed;
-    top: 90%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    padding: 20px 0px;
-
-    font-family: 'Fraunces', serif;
-    font-size: 1.5em;
-    font-weight: 200;
+#advice-btn-container div {
+    padding: 8px 16px; 
+    font-size: 1em;
     text-align: center;
-    border: 5px solid #BF3605;
     border-radius: 40px;
-    background-color: #FFEC9C;
+    border: 3px solid #00402E;
+
+}
+
+#advice-button-div {
+    color: #00402E;
+    background-color: #BF3605;
+}
+
+#advice-button {
+    color: #FFEC9C;
+}
+
+#to-love-div {
+    background-color: #E8AFBE;
+}
+
+#to-love {
+    color: #00402E
 }
 
 .advice-btn-onscreen {
@@ -371,18 +424,6 @@ input[type=submit] {
     transition: all 500ms ease-in-out;
 }
 
-
-#love-button, #advice-button {
-    text-decoration: none;
-}
-
-#love-button {
-    color: black;
-}
-
-#advice-button {
-    color: black;
-}
 
 /* INTRO STYLING */
 
@@ -468,9 +509,9 @@ input[type=submit] {
 
 @media only screen and (min-width: 600px) {
 
-    main {
+    /* main {
         display: flex;
-    }
+    } */
 
 
     h1 {
@@ -478,20 +519,20 @@ input[type=submit] {
     }
 
 
-    ol {
+    /* ol {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 0px;
-    }
+    } */
 
-    #left {
+    /* #left {
         padding-top: 200px;
         width: 50%;
     }
 
     #right {
         width: 50%;
-    }
+    } */
 
     .blur{
         filter: blur(10px);
@@ -524,13 +565,64 @@ input[type=submit] {
 
     form {
         width: 40%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .advice-form-onscreen {
+        bottom: 5%;
+    }
+
+    .advice-form-offscreen {
+        bottom: -80%;
     }
 
     /*////////////////// BUTTON STYLING //////////////////*/
 
     #love-button-div {
+        position: fixed;
+        z-index: 2;
+        top: 90%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        width: 300px;
         left: 25%;
+        width: 300px;
+        font-size: 1.5em;
+
+        padding: 20px 0px; 
+
+        border: 5px solid #E8AFBE;
     }
+
+    #advice-button-div {
+        position: fixed;
+        z-index: 2;
+        top: 90%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        left: 25%;
+        width: 300px;
+        font-size: 1.5em;
+
+        padding: 20px 0px; 
+
+        border: 5px solid #E8AFBE;
+    }
+
+    .love-form-offscreen {
+        bottom: 5%;
+    }
+
+    .advice-form-offscreen {
+        bottom: -80%;
+    }
+
+    #to-love-div, #to-advice-div {
+        display: none;
+    }
+
 
     /*////////////////// INTRO //////////////////*/
 

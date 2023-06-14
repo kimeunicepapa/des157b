@@ -27,14 +27,14 @@
         <h1>Dear Davis,</h1>
     </header>
     <main>
-        <section id="overlay" class="showing">
+        <section id="overlay" class="hidden">
             <article>
                 <h2>Dear Davis,</h2>
                 <p>The anonymous platform to share your thoughts about Davis</p>
                 <p id="instructions">Click to start</p>
             </article>
         </section>
-        <div id="left" class="blur">
+        <div id="left" class="show-section no-blur">
             <section>
                 <h2>Here are some love messages for you</h2>
                 <ol id="loveContainer">
@@ -51,17 +51,19 @@
                     <button><img src="images/dislike.png" alt="dislike button"></button> -->
                 </ol>
 
-            </section>
-            
-        </div>
-        <div class="love-btn-offscreen" id="love-button-div">
-                <a href="#" id="love-button">Submit a thought</a>
-        </div>
-        <div>
-            <a href="#" id="to-advice"></a>
+            </section> 
+            <div id="love-btn-container">
+                <div class="love-btn-onscreen" id="love-button-div">
+                        <a href="#" id="love-button">Submit a thought</a>
+                </div>
+                <div id="to-advice-div">
+                    <a href="#" id="to-advice">Advice Messages</a>
+                </div>
+            </div>
         </div>
         
-        <div id="right" class="blur">
+
+        <div id="right" class="hide-section no-blur">
             <section>
                 <h2>Here are some advice messages for you</h2>
                 <ol id="adviceContainer">
@@ -76,10 +78,14 @@
 
             </section>
             
-            
-        </div>
-       <div class="advice-btn-offscreen" id="advice-button-div">
-                <a href="#" id="advice-button">Submit a thought</a>
+            <div id="advice-btn-container">
+                <div class="advice-btn-onscreen" id="advice-button-div">
+                        <a href="#" id="advice-button">Submit a thought</a>
+                </div>
+                <div id="to-love-div">
+                    <a href="#" id="to-love">Love Messages</a>
+                </div>
+            </div>
         </div>
 
     </main>

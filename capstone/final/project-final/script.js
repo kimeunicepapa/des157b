@@ -140,17 +140,17 @@
         // })
     })
 
-    leftSide.addEventListener("mouseout", function(event){
-        event.preventDefault();
-        leftSide.className="blur";
-        loveBtnDiv.className = "love-btn-offscreen";
-    })
+    // leftSide.addEventListener("mouseout", function(event){
+    //     event.preventDefault();
+    //     leftSide.className="blur";
+    //     loveBtnDiv.className = "love-btn-offscreen";
+    // })
 
-    rightSide.addEventListener("mouseleave", function(event){
-        event.preventDefault();
-        rightSide.className="blur";
-        adviceBtnDiv.className = "advice-btn-offscreen";
-    })
+    // rightSide.addEventListener("mouseleave", function(event){
+    //     event.preventDefault();
+    //     rightSide.className="blur";
+    //     adviceBtnDiv.className = "advice-btn-offscreen";
+    // })
 
     // rightSide.addEventListener("mouseout", function(event){
     //     event.preventDefault();
@@ -269,6 +269,19 @@
     // function removeBlurLeft() {
     //     leftSide.className = "no-blur";
     // }
+
+    document.querySelector('#to-advice-div').addEventListener('click', function(event){
+        event.preventDefault();
+        document.getElementById('right').className = 'show-section';
+        document.getElementById('left').className = 'hide-section';
+    });
+
+    document.querySelector('#to-love-div').addEventListener('click', function(event){
+        event.preventDefault();
+        document.getElementById('right').className = 'hide-section';
+        document.getElementById('left').className = 'show-section';
+    });
+
     document.querySelector('#overlay').addEventListener('click', function(event) {
         event.preventDefault();
         document.getElementById('overlay').className = 'hidden';
