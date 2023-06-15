@@ -146,16 +146,11 @@
         loveBtnDiv.className = "love-btn-offscreen";
     })
 
-    rightSide.addEventListener("mouseleave", function(event){
+    rightSide.addEventListener("mouseout", function(event){
         event.preventDefault();
         rightSide.className="blur";
         adviceBtnDiv.className = "advice-btn-offscreen";
     })
-
-    // rightSide.addEventListener("mouseout", function(event){
-    //     event.preventDefault();
-    //     adviceBtn.className = "advice-btn-offscreen";
-    // })
 
     adviceBtnDiv.addEventListener("click", function(event){
         event.preventDefault();
