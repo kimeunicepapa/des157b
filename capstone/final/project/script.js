@@ -152,6 +152,11 @@
         adviceBtnDiv.className = "advice-btn-offscreen";
     })
 
+    // rightSide.addEventListener("mouseout", function(event){
+    //     event.preventDefault();
+    //     adviceBtn.className = "advice-btn-offscreen";
+    // })
+
     adviceBtnDiv.addEventListener("click", function(event){
         event.preventDefault();
         addAdviceForm.className = "advice-form-onscreen";

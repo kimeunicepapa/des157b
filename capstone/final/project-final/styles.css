@@ -55,16 +55,12 @@ main {
 
 #left {
     z-index: 1;
-    filter: blur(0);
-    opacity: 1;
-    transition: all 700ms ease-in-out;
+
 }
 
 #right {
     z-index: 0;
-    filter: blur(0);
-        opacity: 1;
-        transition: all 700ms ease-in-out;
+
 }
 
 section h2 {
@@ -144,9 +140,8 @@ li img{
 }
 
 .love {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    /* margin: 10px 50px 0px 50px; */
+    hyphens: auto;
+
     bottom: 0;
     font-size: 1.1em;
 }
@@ -443,6 +438,18 @@ input[type=submit] {
     transition: all 500ms ease-in-out;
 }
 
+.blur{
+    filter: blur(10px);
+    opacity: 0.3;
+    transition: all 700ms ease-in-out;
+}
+
+.no-blur {
+    filter: blur(0rem);
+    opacity: 1;
+    transition: all 700ms ease-in-out;
+}
+
 
 /* INTRO STYLING */
 
@@ -526,7 +533,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 1000px) {
 
     main {
         padding: 170px 20px 70px 20px;
@@ -548,29 +555,29 @@ input[type=submit] {
     
     #left {
         flex: 1;
-        filter: blur(10px);
+        /* filter: blur(10px);
         opacity: 0.3;
-        transition: all 700ms ease-in-out;
+        transition: all 700ms ease-in-out; */
     }
 
-    #left:hover{
+    /* #left:hover{
         filter: blur(0);
         opacity: 1;
         transition: all 700ms ease-in-out;
-    }
+    } */
 
     #right {
         flex: 1;
-        filter: blur(10px);
+        /* filter: blur(10px);
         opacity: 0.3;
-        transition: all 700ms ease-in-out;
+        transition: all 700ms ease-in-out; */
     }
 
-    #right:hover {
+    /* #right:hover {
         filter: blur(0);
         opacity: 1;
         transition: all 700ms ease-in-out;
-    }
+    } */
 
 
     footer {

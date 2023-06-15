@@ -92,6 +92,47 @@
 
     displayAdvice();
 
+    /*////////////////// BLUR SUBMIT BUTTONS //////////////////*/
+
+
+    leftSide.addEventListener("mouseover", function(event){
+        event.preventDefault();
+        leftSide.className="no-blur";
+        loveBtnDiv.className = "love-btn-onscreen";
+    })
+
+    loveBtnDiv.addEventListener("mouseover", function(event){
+        event.preventDefault();
+        console.log('enter');
+        leftSide.className="no-blur";
+        loveBtnDiv.className = "love-btn-onscreen";
+    })
+    leftSide.addEventListener("mouseout", function(event){
+        event.preventDefault();
+        leftSide.className="blur";
+        loveBtnDiv.className = "love-btn-offscreen";
+    })
+
+    rightSide.addEventListener("mouseover", function(event){
+        event.preventDefault();
+        rightSide.className="no-blur";
+        adviceBtnDiv.className = "advice-btn-onscreen";
+    })
+
+    adviceBtnDiv.addEventListener("mouseover", function(event){
+        event.preventDefault();
+        console.log('enter');
+        rightSide.className="no-blur";
+        adviceBtnDiv.className = "advice-btn-onscreen";
+    })
+
+    rightSide.addEventListener("mouseout", function(event){
+        event.preventDefault();
+        rightSide.className="blur";
+        adviceBtnDiv.className = "advice-btn-offscreen";
+    })
+
+
 
     /*////////////////// SUBMIT BUTTON INTERACTION //////////////////*/
 
@@ -234,13 +275,15 @@
         } else {
           leftSide.className = "show-section";
           rightSide.className = "show-section";
+          loveBtnDiv.className = "love-btn-onscreen";
+          adviceBtnDiv.className = "advice-btn-onscreen";
           document.getElementById('love-btn-container').className = "showing";
           document.getElementById('advice-btn-container').className = "showing";
             
         }
       }
       
-      var x = window.matchMedia("(max-width: 767px)")
+      var x = window.matchMedia("(max-width: 1000px)")
       myFunction(x); // Call listener function at run time
       x.addListener(myFunction); // Attach listener function on state changes
 })();
