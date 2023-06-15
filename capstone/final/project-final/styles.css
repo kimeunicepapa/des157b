@@ -388,7 +388,6 @@ input[type=submit] {
 
 #love-button {
     color: #00402E;
-    font-weight: bolder;
 }
 
 #to-advice-div {
@@ -638,13 +637,13 @@ input[type=submit] {
 
     #love-btn-container div {
         /* width: 100%; */
-        padding: 16px 24px;
+        padding: 16px 16px;
         font-size: 1.2em;
     }
 
     #advice-btn-container div {
         /* width: 100%; */
-        padding: 16px 24px;
+        padding: 16px 16px;
         font-size: 1.2em;
     }
 
@@ -664,6 +663,10 @@ input[type=submit] {
         font-size: 1.5em;
 
         /* padding: 30px 0px;  */
+    }
+
+    #love-button, #advice-button {
+        font-weight: bolder;
     }
 
     #to-love-div, #to-advice-div {
