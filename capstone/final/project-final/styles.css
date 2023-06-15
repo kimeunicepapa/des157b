@@ -482,6 +482,8 @@ input[type=submit] {
 }
 
 #overlay h2 {
+    font-family: 'Fraunces', serif;
+    
     margin-bottom: 0;
     
     font-weight: 800;
@@ -549,6 +551,10 @@ input[type=submit] {
 
     h1 {
         font-size: 4em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
     }
 
 }
