@@ -276,7 +276,7 @@
             document.getElementById('love-btn-container').className = "showing";
             document.getElementById('advice-btn-container').className = "hidden";
             loveBtnDiv.className = "love-btn-onscreen";
-          adviceBtnDiv.className = "advice-btn-onscreen";
+          adviceBtnDiv.className = "advice-btn-offscreen";
 
             
         } else {
