@@ -240,16 +240,20 @@
         event.preventDefault();
         rightSide.className = 'show-section';
         document.querySelector('#advice-btn-container').className = "showing";
+        adviceBtnDiv.className = "advice-btn-onscreen";
         leftSide.className = 'hide-section';
         document.querySelector('#love-btn-container').className = "hidden";
+        loveBtnDiv.className = "love-btn-offscreen";
     });
 
     document.querySelector('#to-love-div').addEventListener('click', function(event){
         event.preventDefault();
         rightSide.className = 'hide-section';
         document.querySelector('#advice-btn-container').className = "hidden";
+        adviceBtnDiv.className = "advice-btn-offscreen";
         leftSide.className = 'show-section';
         document.querySelector('#love-btn-container').className = "showing";
+        loveBtnDiv.className = "love-btn-onscreen";
     });
 
     document.querySelector('#overlay').addEventListener('click', function(event) {
@@ -271,12 +275,15 @@
             rightSide.className = "hide-section";
             document.getElementById('love-btn-container').className = "showing";
             document.getElementById('advice-btn-container').className = "hidden";
+            loveBtnDiv.className = "love-btn-onscreen";
+          adviceBtnDiv.className = "advice-btn-onscreen";
+
             
         } else {
           leftSide.className = "show-section";
           rightSide.className = "show-section";
-          loveBtnDiv.className = "love-btn-onscreen";
-          adviceBtnDiv.className = "advice-btn-onscreen";
+        //   loveBtnDiv.className = "love-btn-onscreen";
+        //   adviceBtnDiv.className = "advice-btn-onscreen";
           document.getElementById('love-btn-container').className = "showing";
           document.getElementById('advice-btn-container').className = "showing";
             

@@ -162,11 +162,13 @@ li img{
 
 form {
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 101vw;
+    height: 50vh;
     margin: auto;
     z-index: 4;
     padding: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 form h2 {
@@ -243,14 +245,14 @@ input[type=submit] {
 }
 
 .love-form-onscreen {
-    bottom: -50%;
+    bottom: -30%;
     left: 50%;
     transform: translate(-50%, -50%);  
     transition: all 500ms ease-in-out;
 }
 
 .love-form-offscreen {
-    bottom: -150%;
+    bottom: -80%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 500ms ease-in-out; 
@@ -287,14 +289,14 @@ input[type=submit] {
 }
 
 .advice-form-onscreen {
-    bottom: -50%;
+    bottom: -30%;
     left: 50%;
     transform: translate(-50%, -50%);  
     transition: all 500ms ease-in-out;
 }
 
 .advice-form-offscreen {
-    bottom: -150%;
+    bottom: -80%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 500ms ease-in-out; 
@@ -327,11 +329,11 @@ input[type=submit] {
 
 /*////////////////// BUTTON STYLING //////////////////*/
 #love-btn-container, #advice-btn-container {
-    
+    width: 100%;
     position: fixed;
     display: flex;
 
-    top: 90%;
+    top: 92%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
@@ -625,11 +627,13 @@ input[type=submit] {
         width: 50%;
         display: block;
         left: 25%;
+        top: 90%;
     }
     #advice-btn-container {
         width: 50%;
         display: block;
         left: 75%;
+        top: 90%;
     }
 
     #love-btn-container div {
