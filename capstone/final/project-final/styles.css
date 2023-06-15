@@ -6,7 +6,7 @@ body {
     font-family: "Marcellus", sans-serif;
     background-image: url(images/green.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 100%;
     background-attachment: fixed;
 }
 
@@ -532,6 +532,25 @@ input[type=submit] {
 
 .close:hover {
     cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-size: cover;
+    }
+    header {
+        padding: 20px;
+    }
+
+    main {
+        padding: 100px 20px 70px 20px;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
 }
 
 @media only screen and (min-width: 1000px) {
