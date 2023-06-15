@@ -252,7 +252,7 @@ input[type=submit] {
 }
 
 .love-form-offscreen {
-    bottom: -80%;
+    bottom: -90%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 500ms ease-in-out; 
@@ -296,7 +296,7 @@ input[type=submit] {
 }
 
 .advice-form-offscreen {
-    bottom: -80%;
+    bottom: -90%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 500ms ease-in-out; 
