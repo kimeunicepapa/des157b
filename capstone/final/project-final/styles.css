@@ -4,10 +4,7 @@
 
 body {
     font-family: "Marcellus", sans-serif;
-    background-image: url(images/green.png);
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-attachment: fixed;
+    background-color: #A4D19A;
 }
 
 header {
@@ -538,6 +535,9 @@ input[type=submit] {
 
 @media only screen and (min-width: 600px) {
     body {
+        background-image: url(images/green.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         background-size: cover;
     }
     header {
