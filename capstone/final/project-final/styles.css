@@ -359,7 +359,7 @@ input[type=submit] {
     font-size: 1em;
     text-align: center;
     border-radius: 40px;
-    border: 3px solid #00402E;
+    border: 3px solid #F7E8A4;
 }
 
 #love-button-div {
@@ -535,7 +535,7 @@ input[type=submit] {
 
 @media only screen and (min-width: 600px) {
     body {
-        background-image: url(images/green.png);
+        background-image: url(images/background-paper.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -554,7 +554,9 @@ input[type=submit] {
     }
 
     section h2 {
+        padding: 0 0 20px 0;
         font-size: 1.5em;
+        text-transform: uppercase;
     }
 
 }
