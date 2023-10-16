@@ -556,7 +556,7 @@ input[type=submit] {
     section h2 {
         padding: 0 0 20px 0;
         font-size: 1.5em;
-        text-transform: uppercase;
+
     }
 
 }
@@ -665,20 +665,20 @@ input[type=submit] {
     #love-btn-container div {
         /* width: 100%; */
         padding: 16px 16px;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     #advice-btn-container div {
         /* width: 100%; */
         padding: 16px 16px;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     #love-button-div {
         width: 40%;
         margin-left: auto;
         margin-right: auto;
-        font-size: 1.5em;
+        font-size: 1em;
 
         /* padding: 30px 0px;  */
     }
@@ -687,7 +687,7 @@ input[type=submit] {
         width: 40%;
         margin-left: auto;
         margin-right: auto;
-        font-size: 1.5em;
+        font-size: 1em;
 
         /* padding: 30px 0px;  */
     }
